@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  width: $vp-1366;
+  padding: 30px 103px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -93px;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    width: $vp-768;
+    padding: 34px 45px;
+    margin-bottom: -115px;
+  }
+
+  @include vp-767 {
+    width: $vp-320;
+    padding: 15px 15px;
+    margin-bottom: -115px;
+  }
+}
+
+.header__logo {
+  padding-left: 1px;
+  padding-top: 10px;
+
+  @include vp-1365 {
+    width: 82px;
+    padding-left: 0;
+    padding-top: 7px;
+  }
+
+  @include vp-767 {
+    width: 67px;
+    padding-top: 6px;
+    padding-left: 1px;
+  }
+}
+
+.header__phone {
+  @include font-style("Alumni Sans", 600, 26px, normal, $color-default-white);
+  letter-spacing: 0.78px;
+
+  @include vp-1365 {
+    @include font-style("Alumni Sans", 600, 24px, normal, $color-default-white);
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    padding-top: 1px;
+  }
+}

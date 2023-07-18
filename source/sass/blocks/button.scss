@@ -1,0 +1,18 @@
+.button {
+  @include font-style("Roboto Condensed", 700, 12px, normal, $color-default-white);
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  border: solid 4px $color-default-white;
+  background-color: transparent;
+  letter-spacing: 0.6px;
+  min-width: 230px;
+  min-height: 57px;
+
+  @include vp-1365 {
+    padding: 20px 30px;
+    min-width: 183px;
+    min-height: 57px;
+  }
+}

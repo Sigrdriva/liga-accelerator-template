@@ -36,6 +36,14 @@
   }
 }
 
+@mixin font-style($family: "Roboto Condensed", $weight: 300, $size: 16px, $height: normal, $color: $color-text) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
 // Desktop first
 
 @mixin vp-1919 {
@@ -50,6 +58,12 @@
   }
 }
 
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1279 {
   @media (max-width: ($vp-1280 - 1px)) {
     @content;
@@ -58,6 +72,12 @@
 
 @mixin vp-1023 {
   @media (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-768 {
+  @media (max-width: $vp-768) {
     @content;
   }
 }
