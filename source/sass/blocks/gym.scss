@@ -1,0 +1,166 @@
+.gym {
+  color: $color-text;
+  padding: 120px 103px 235px 163px;
+  display: grid;
+  grid-template-columns: 355px 660px;
+  gap: 85px;
+  max-width: $vp-1366;
+  margin: 0 auto;
+  position: relative;
+
+  @include vp-1365 {
+    grid-template-columns: auto;
+    padding: 100px 45px 183px;
+    gap: 35px;
+  }
+
+  @include vp-767 {
+    padding: 62px 0 70px;
+    gap: 33px;
+  }
+}
+
+.gym__wrapper {
+  @include vp-1365 {
+    text-align: center;
+    padding: 0 88px;
+  }
+
+  @include vp-767 {
+    padding: 0 26px 0 15px;
+    text-align: left;
+  }
+}
+
+.gym h2 {
+  @include font-style("Alumni Sans", 600, 48px, normal, $color-text);
+  letter-spacing: 1.44px;
+  margin-bottom: 9px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-top: 0;
+    margin-bottom: 1px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 7px;
+  }
+}
+
+.gym p:first-of-type {
+  @include font-style("Roboto Condensed", 400, 18px, normal, $color-text);
+  margin-top: 0;
+  margin-bottom: 42px;
+
+  @include vp-1365 {
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.gym p {
+  @include font-style("Roboto Condensed", 300, 16px, normal, $color-text);
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include vp-767 {
+    padding-right: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.gym p:last-of-type {
+  @include vp-1365 {
+    display: none;
+  }
+}
+
+.gym img {
+  margin: 0;
+
+  @include vp-1365 {
+    width: 678px;
+  }
+}
+
+.gym__picture {
+  @include vp-1365 {
+    margin: 0 auto;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+  bottom: 120px;
+  left: calc(50% + 39px);
+  transform: translate(-50%, 0);
+
+  @include vp-1365 {
+    width: 266px;
+    height: 167px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    margin-top: 6px;
+  }
+}
+
+.gym__video {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.gym__button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: transparent;
+  background-image: url('../../img/video-button.svg');
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include vp-1365 {
+    width: 73px;
+    height: 73px;
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url('../../img/video-button-hover.svg');
+  }
+
+  &:active {
+    background-image: url('../../img/video-button-active.svg');
+  }
+
+  &:disabled {
+    background-image: url('../../img/video-button-hover.svg');
+    opacity: 0.4;
+  }
+}

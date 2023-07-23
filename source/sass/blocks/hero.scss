@@ -18,18 +18,16 @@
 }
 
 .hero__title {
-  @include font-style("Alumni Sans", 600, 92px, normal, $color-default-white);
+  @include font-style("Alumni Sans", 800, 92px, normal, $color-default-white);
   letter-spacing: 4.6px;
   text-transform: uppercase;
   grid-column: 2 / 3;
   text-align: end;
   margin: 0;
-  margin-top: -1px;
-  margin-left: 17px;
 
   @include vp-1365 {
     font-size: 72px;
-    letter-spacing: 3.6px;
+    letter-spacing: 2.6px;
     text-transform: none;
     margin-top: 1px;
   }
@@ -96,10 +94,9 @@
 
 .hero__buy {
   grid-column: 2 / 3;
-  width: 234px;
-  height: 61px;
-  margin-left: 31px;
-  margin-top: 4px;
+  width: 226px;
+  height: 55px;
+  margin-left: 35px;
 
   @include vp-1365 {
     width: 187px;

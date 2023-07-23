@@ -52,10 +52,68 @@
             <button class="hero__buy button">Купить абонемент</button>
           </div>
         </section>
+
+        <section class="gym">
+          <div class="gym__wrapper">
+            <h2 class="gym__title">Тренажерный зал</h2>
+            <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <picture class="gym__picture">
+            <source type="image/webp" media="(max-width: 320px)" srcset="./img/gym-phone.webp 1x, ./img/gym-phone@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 768px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x">
+            <source media="(max-width: 320px)" srcset="./img/gym-phone.jpg 1x, ./img/gym-phone@2x.jpg 2x">
+            <source media="(max-width: 768px)" srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
+            <img src="./img/gym-desktop.jpg" width="660" height="401" srcset="./img/gym-desktop@2x.jpg 2x" alt="Тренажерный зал.">
+          </picture>
+          <div class="gym__video-wrapper">
+            <video class="gym__video" width="364" height="228" poster="./img/video-poster-desktop.jpg">
+              <source src="./img/gym-video.mp4" type="video/mp4">
+            </video>
+            <button class="gym__button"></button>
+          </div>
+        </section>
+
       </main>
 
       <footer>
-        <div class="container">
+        <div class="container footer">
+          <a class="footer__logo" href="#">
+            <picture>
+              <img src="./img/svg/logo.svg" alt="Фитнес центр Supergum." width="88" height="32">
+              <source media="(min-width: 768px)" width="82" height="17">
+              <source media="(min-width: 320px)" width="69" height="24">
+            </picture>
+          </a>
+          <nav class="footer__navigation">
+            <a href="#">Услуги</a>
+            <a href="#">Абонементы</a>
+            <a href="#">Акции</a>
+            <a href="#">Тренеры</a>
+            <a href="#">Расписание</a>
+          </nav>
+          <ul class="footer__social social">
+            <li>
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Мы Вконтакте</span>
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#icon-vk" /></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link social__link--ok" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#icon-ok" /></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link social__link--re" href="#">
+                <span class="visually-hidden">Мы на Реддите</span>
+                <svg class="social__icon" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#icon-re" /></svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
