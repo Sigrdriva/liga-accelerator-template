@@ -8,13 +8,20 @@
   outline: solid 4px $color-default-white;
   background-color: transparent;
   letter-spacing: 0.6px;
-  min-width: 226px;
+  min-width: 204px;
   min-height: 55px;
 
   @include vp-1365 {
     padding: 20px 30px;
     min-width: 183px;
     min-height: 57px;
+  }
+
+  &--special {
+    background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+    padding: 25px 24px;
+    width: 204px;
+    margin-left: -1px;
   }
 
   &:hover {
@@ -29,5 +36,19 @@
 
   &:disabled {
     opacity: 0.5;
+  }
+
+  &--not-special {
+    color: $color-text;
+    outline: solid 2px $color-text;
+    padding: 24px;
+    width: 204px;
+    margin-left: -1px;
+
+    &:active {
+      background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+      color: $color-default-white;
+      outline: none;
+    }
   }
 }

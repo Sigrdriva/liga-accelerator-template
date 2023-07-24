@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -601,14 +602,6 @@ button,
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.btn.focus-visible:focus {
-  opacity: 0.8;
 }
 
 .modal {
@@ -1256,7 +1249,7 @@ button,
   outline: solid 4px #ffffff;
   background-color: transparent;
   letter-spacing: 0.6px;
-  min-width: 226px;
+  min-width: 204px;
   min-height: 55px;
 }
 @media (max-width: 1365px) {
@@ -1265,6 +1258,12 @@ button,
     min-width: 183px;
     min-height: 57px;
   }
+}
+.button--special {
+  background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+  padding: 25px 24px;
+  width: 204px;
+  margin-left: -1px;
 }
 .button:hover {
   color: #103aae;
@@ -1276,6 +1275,18 @@ button,
 }
 .button:disabled {
   opacity: 0.5;
+}
+.button--not-special {
+  color: #102654;
+  outline: solid 2px #102654;
+  padding: 24px;
+  width: 204px;
+  margin-left: -1px;
+}
+.button--not-special:active {
+  background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+  color: #ffffff;
+  outline: none;
 }
 
 .intro {
@@ -1799,6 +1810,440 @@ button,
 .gym__button:disabled {
   background-image: url("../../img/video-button-hover.svg");
   opacity: 0.4;
+}
+
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 23px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 352px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+.tabs__controls::after {
+  content: "";
+  width: 341px;
+  height: 2px;
+  background: #787878;
+  opacity: 0.2;
+  position: absolute;
+  bottom: -8px;
+  left: 5px;
+}
+@media screen and (max-width: 767px) {
+  .tabs__controls {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.tabs__controls :hover,
+.tabs__controls :focus,
+.tabs__controls :active {
+  color: #102654;
+  opacity: 1;
+}
+.tabs__controls :hover::after,
+.tabs__controls :focus::after,
+.tabs__controls :active::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #d10a42;
+  position: absolute;
+  bottom: -8px;
+}
+.tabs__controls :disabled {
+  opacity: 0.3;
+}
+@media (max-width: 1365px) {
+  .tabs__controls {
+    width: 342px;
+    margin-bottom: 52px;
+  }
+  .tabs__controls::after {
+    width: 334px;
+    left: 3px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__controls {
+    width: 300px;
+    margin-bottom: 42px;
+  }
+  .tabs__controls::after {
+    width: 290px;
+    left: 5px;
+  }
+}
+
+.tabs__control {
+  cursor: pointer;
+  min-width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #102654;
+  opacity: 0.5;
+  background: none;
+  padding: 5px;
+  position: relative;
+}
+.tabs__control.is-active {
+  pointer-events: none;
+  opacity: 1;
+}
+.tabs__control.is-active::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #d10a42;
+  position: absolute;
+  bottom: -8px;
+}
+@media (max-width: 1365px) {
+  .tabs__control {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #102654;
+  }
+  .tabs__control.is-active::after {
+    width: 87%;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__control {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102654;
+  }
+  .tabs__control.is-active::after {
+    width: 96%;
+    left: 5px;
+  }
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  padding: 0 103px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 43px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .tabs__element {
+    padding: 15px;
+  }
+}
+@media (max-width: 1365px) {
+  .tabs__element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 163px;
+    gap: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__element {
+    padding: 0 15px;
+    gap: 32px;
+  }
+}
+
+.tabs__card {
+  padding: 63px 77px;
+  background: #ffffff;
+  text-align: center;
+}
+.tabs__card--best {
+  padding: 56px 71px 60px;
+  border: 7px solid transparent;
+  -o-border-image: url(../../img/subscription-border.png) 1 stretch;
+     border-image: url(../../img/subscription-border.png) 1 stretch;
+}
+@media (max-width: 1365px) {
+  .tabs__card:last-child {
+    margin-top: -5px;
+    padding-bottom: 69px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__card {
+    padding: 51px 42px;
+  }
+}
+
+.tabs__card h3 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 28.641px;
+  color: #102654;
+  margin: 0 0 10px;
+}
+@media (max-width: 767px) {
+  .tabs__card h3 {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24.234px;
+    color: #102654;
+  }
+}
+
+.tabs__card p:first-of-type {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102654;
+  margin: 0 0 84px;
+}
+@media (max-width: 767px) {
+  .tabs__card p:first-of-type {
+    margin-bottom: 68px;
+  }
+}
+
+.tabs__priсe-bg {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 0;
+  color: #e8e8e8;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .tabs__priсe-bg {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 0;
+    color: #e8e8e8;
+  }
+}
+
+.tabs__priсe {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+  margin: -20px 0 0;
+  padding-left: 3px;
+  margin-bottom: 37px;
+}
+@media (max-width: 767px) {
+  .tabs__priсe {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #103aae;
+    margin: -15px 0 32px;
+  }
+}
+
+.tabs__card--best .tabs__priсe {
+  margin-bottom: 37px;
+}
+
+.tabs__priсe span {
+  color: #102654;
+  padding-left: 11px;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+[data-tabs=parent] {
+  overflow: hidden;
+}
+[data-tabs=parent].no-transition > [data-tabs=control],
+[data-tabs=parent].no-transition > [data-tabs=content],
+[data-tabs=parent].no-transition > [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+[data-tabs=parent].no-transition-global [data-tabs=control],
+[data-tabs=parent].no-transition-global [data-tabs=content],
+[data-tabs=parent].no-transition-global [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent] [data-tabs=content] {
+  position: relative;
+}
+
+[data-tabs=element] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs=element].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=element].is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscription {
+  position: relative;
+  min-width: 1366px;
+  min-height: 851px;
+  background: #f8f9fc;
+  padding: 120px 103px;
+}
+.subscription::after {
+  position: absolute;
+  content: url("../../img/weight-plates-desktop.png");
+  bottom: -157px;
+  right: 0;
+}
+@media (max-width: 1365px) {
+  .subscription {
+    min-width: 768px;
+    padding: 100px 163px;
+    min-height: 1779px;
+  }
+  .subscription::after {
+    content: url("../../img/weight-plates-tablet.png");
+    bottom: -132px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription {
+    min-width: 320px;
+    padding: 63px 15px;
+    min-height: 1487px;
+  }
+  .subscription::after {
+    content: "";
+  }
+}
+
+.subscription section {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 1366px;
+}
+@media (max-width: 1365px) {
+  .subscription section {
+    width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription section {
+    width: 320px;
+  }
+}
+
+.subscription .subtitle {
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: normal;
+  color: #102654;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin: 0 0 12px;
+}
+@media (max-width: 1365px) {
+  .subscription .subtitle {
+    font-family: "Alumni Sans";
+    font-weight: 600;
+    font-size: 42px;
+    line-height: normal;
+    color: #102654;
+    letter-spacing: 1.26px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription .subtitle {
+    font-family: "Alumni Sans";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: normal;
+    color: #102654;
+    letter-spacing: 0.96px;
+    margin-bottom: 18px;
+  }
+}
+
+.competition {
+  padding: 120px 103px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 660px;
+  grid-template-columns: 500px 660px;
+  -ms-grid-rows: 500px;
+  grid-template-rows: 500px;
+}
+@media (max-width: 1365px) {
+  .competition {
+    -ms-grid-columns: 292px 386px;
+    grid-template-columns: 292px 386px;
+    -ms-grid-rows: 292px;
+    grid-template-rows: 292px;
+  }
+}
+@media (max-width: 767px) {
+  .competition {
+    -ms-grid-columns: 290px;
+    grid-template-columns: 290px;
+    -ms-grid-rows: 292px 292px;
+    grid-template-rows: 292px 292px;
+    padding: 120px 15px;
+  }
 }
 
 /* @mixin hover-focus {

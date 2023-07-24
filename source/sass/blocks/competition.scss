@@ -1,0 +1,17 @@
+.competition {
+  padding: 120px 103px;
+  display: grid;
+  grid-template-columns: 500px 660px;
+  grid-template-rows: 500px;
+
+  @include vp-1365 {
+    grid-template-columns: 292px 386px;
+    grid-template-rows: 292px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 290px;
+    grid-template-rows: 292px 292px;
+    padding: 120px 15px;
+  }
+}

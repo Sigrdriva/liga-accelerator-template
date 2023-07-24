@@ -1,0 +1,219 @@
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  position: relative;
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
+  width: 352px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+
+  &::after {
+    content: "";
+    width: 341px;
+    height: 2px;
+    background: #787878;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -8px;
+    left: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  :hover,
+  :focus,
+  :active {
+    color: $color-text;
+    opacity: 1;
+
+    &::after {
+      content: "";
+      width: 90%;
+      height: 2px;
+      background: #d10a42;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+
+  :disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-1365 {
+    width: 342px;
+    margin-bottom: 52px;
+
+    &::after {
+      width: 334px;
+      left: 3px;
+    }
+  }
+
+  @include vp-767 {
+    width: 300px;
+    margin-bottom: 42px;
+
+    &::after {
+      width: 290px;
+      left: 5px;
+    }
+  }
+}
+
+.tabs__control {
+  cursor: pointer;
+  min-width: auto;
+  justify-content: center;
+  @include font-style("Roboto Condensed", 400, 20px, 30px, $color-text);
+  opacity: 0.5;
+  background: none;
+  padding: 5px;
+  position: relative;
+
+  &.is-active {
+    pointer-events: none;
+    opacity: 1;
+
+    &::after {
+      content: "";
+      width: 90%;
+      height: 2px;
+      background: #d10a42;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+
+  @include vp-1365 {
+    @include font-style("Roboto Condensed", 400, 18px, 27px, $color-text);
+
+    &.is-active::after {
+      width: 87%;
+    }
+  }
+
+  @include vp-767 {
+    @include font-style("Roboto Condensed", 400, 16px, 24px, $color-text);
+
+    &.is-active::after {
+      width: 96%;
+      left: 5px;
+    }
+  }
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  padding: 0 103px;
+  width: 100%;
+  display: flex;
+  gap: 43px;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
+  @include vp-1365 {
+    flex-direction: column;
+    padding: 0 163px;
+    gap: 46px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    gap: 32px;
+  }
+}
+
+.tabs__card {
+  padding: 63px 77px;
+  background: $color-default-white;
+  text-align: center;
+
+  &--best {
+    padding: 56px 71px 60px;
+    border: 7px solid transparent;
+    border-image: url(../../img/subscription-border.png) 1 stretch;
+  }
+
+  &:last-child {
+    @include vp-1365 {
+      margin-top: -5px;
+      padding-bottom: 69px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 51px 42px;
+  }
+}
+
+.tabs__card h3{
+  @include font-style("Roboto Condensed", 700, 26px, 28.641px, $color-text);
+  margin: 0 0 10px;
+
+  @include vp-767 {
+    @include font-style("Roboto Condensed", 700, 22px, 24.234px, $color-text);
+  }
+}
+
+.tabs__card p:first-of-type {
+  @include font-style("Roboto Condensed", 400, 16px, 24px, $color-text);
+  margin: 0 0 84px;
+
+  @include vp-767 {
+    margin-bottom: 68px;
+  }
+}
+
+.tabs__priсe-bg {
+  @include font-style("Roboto Condensed", 700, 100px, 0, #e8e8e8);
+  margin: 0;
+
+  @include vp-767 {
+    @include font-style("Roboto Condensed", 700, 80px, 0, #e8e8e8);
+  }
+}
+
+.tabs__priсe {
+  @include font-style("Roboto Condensed", 700, 60px, 90px, #103aae);
+  margin: -20px 0 0;
+  padding-left: 3px;
+  margin-bottom: 37px;
+
+  @include vp-767 {
+    @include font-style("Roboto Condensed", 700, 48px, 72px, #103aae);
+    margin: -15px 0 32px;
+  }
+}
+
+.tabs__card--best .tabs__priсe {
+  margin-bottom: 37px;
+}
+
+.tabs__priсe span {
+  color: $color-text;
+  padding-left: 11px;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
