@@ -10,10 +10,9 @@
     <link rel="preload" href="fonts/RobotoCondensed-Light300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/AlumniSans-SemiBold600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-
     <link rel="preload" href="fonts/AlumniSans-Bold700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/AlumniSans-ExtraBold800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -162,8 +161,47 @@
 
 
         <section class="competition">
-          SUPER GAMES
-          Дата
+          <div class="competition__datetime">
+            <p>SUPER GAMES</p>
+            <div class="competition__date">
+              <p>Дата<time datetime="2019-03-07"><span>7</span>Марта<br>2019</time></p>
+            </div>
+            <div class="competition__time">
+              <p>Время<time>12:00</time></p>
+            </div>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <button class="competition__button button">заполнить заявку</button>
+          </div>
+          <div>
+            <picture class="competition__picture">
+              <source type="image/webp" media="(max-width: 320px)" srcset="./img/competition-phone.webp 1x, ./img/competition-phone@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="./img/competition-tablet.webp 1x, ./img/competition-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/competition-desktop.webp 1x, ./img/competition-desktop@2x.webp 2x">
+              <source media="(max-width: 320px)" srcset="./img/competition-phone.jpg 1x, ./img/competition-phone@2x.jpg 2x">
+              <source media="(max-width: 768px)" srcset="./img/competition-tablet.jpg 1x, ./img/competition-tablet@2x.jpg 2x">
+              <img src="./img/competition-desktop.jpg" width="660" height="500" srcset="./img/competition-desktop@2x.jpg 2x" alt="">
+            </picture>
+          </div>
+        </section>
+
+        <section class="coaches">
+          <h2>Тренеры</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </section>
 
       </main>
@@ -208,6 +246,7 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

@@ -133,7 +133,7 @@
 
   @include vp-767 {
     padding: 0 15px;
-    gap: 32px;
+    gap: 35px;
   }
 }
 
@@ -142,10 +142,18 @@
   background: $color-default-white;
   text-align: center;
 
+  @include vp-767 {
+    padding: 51px 42px 56px;
+  }
+
   &--best {
     padding: 56px 71px 60px;
     border: 7px solid transparent;
     border-image: url(../../img/subscription-border.png) 1 stretch;
+
+    @include vp-767 {
+      padding: 44px 35px 48px;
+    }
   }
 
   &:last-child {
@@ -153,10 +161,11 @@
       margin-top: -5px;
       padding-bottom: 69px;
     }
-  }
 
-  @include vp-767 {
-    padding: 51px 42px;
+    @include vp-767 {
+      padding: 50px 42px 54px;
+      margin-top: 0px;
+    }
   }
 }
 
@@ -201,6 +210,10 @@
 
 .tabs__card--best .tabs__priсe {
   margin-bottom: 37px;
+
+  @include vp-767 {
+    margin-bottom: 31px;
+  }
 }
 
 .tabs__priсe span {

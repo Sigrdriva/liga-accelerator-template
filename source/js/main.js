@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/gym';
 import {initTabs} from './modules/init-tabs';
+import './modules/for-swiper';
 
 // ---------------------------------
 
