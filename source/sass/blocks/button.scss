@@ -18,7 +18,7 @@
   }
 
   &--special {
-    background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+    background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
     padding: 25px 24px;
     width: 204px;
     margin-left: -1px;
@@ -46,7 +46,7 @@
     margin-left: -1px;
 
     &:active {
-      background: linear-gradient(97deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
       color: $color-default-white;
       outline: none;
     }

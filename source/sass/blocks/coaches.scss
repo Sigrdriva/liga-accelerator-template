@@ -1,0 +1,48 @@
+.coaches {
+  margin: 0 auto;
+  padding: 0 103px 105px;
+  position: relative;
+  max-width: $vp-1366;
+}
+
+.coaches h2 {
+  @include font-style("Alumni Sans", 600, 54px, normal, $color-text);
+  letter-spacing: 1.62px;
+}
+
+.coaches__slide {
+  position: relative;
+}
+
+.coaches__info {
+  position: absolute;
+  //   transform: translate(50%, 0);
+  //  left: 50%;
+  //
+}
+
+.coaches__info *:not(:first-child) {
+  display: none;
+}
+
+.coaches__info p:first-child {
+  margin:  -50px 0 0;
+  @include font-style("Roboto Condensed", 700, 18px, 27px, $color-default-white);
+}
+
+.coaches__info p {
+  @include font-style("Roboto Condensed", 400, 16px, 24px, $color-default-white);
+}
+
+.coaches__info ul {
+  @include font-style("Roboto Condensed", 400, 14px, 21px, $color-default-white);
+}
+
+.coaches__slide:hover > .coaches__info p,
+.coaches__slide:hover > .coaches__info ul {
+  display: block;
+}
+
+// .coaches__btn {
+
+// }

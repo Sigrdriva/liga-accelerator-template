@@ -1,31 +1,19 @@
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   loop: true,
+import Swiper from '../vendor/swiper.js';
 
-//   // If we need pagination
+export const swiperCoach = () => {
+  const slider = new Swiper('.coaches__slider', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+    grabCursor: 'true',
 
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'custom',
-//   },
+    wrapperClass: 'swiper-wrapper',
+    slideClass: 'swiper-slide',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-right',
-//     prevEl: '.swiper-button-left',
-//   },
-
-// });
-
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 40,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  slider.enable();
+};
