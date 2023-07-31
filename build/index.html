@@ -196,7 +196,7 @@
                 <div class="coaches__info">
                   <p>Анна Павлова</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 4 года</li>
@@ -211,14 +211,14 @@
                 <div class="coaches__info">
                   <p>Алексей Лавров</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 5 лет</li>
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide coaches__slide--hover">
                 <picture class="swiper__image swiper__image--Alexander">
                   <source type="image/webp" srcset="./img/coaches/Alexander.webp 1x, ./img/coaches/Alexander@2x.webp 2x">
                   <img src="./img/coaches/Alexander.jpg" width="260" height="294" srcset="./img/coaches/Alexander@2x.jpg 2x" alt="">
@@ -226,7 +226,7 @@
                 <div class="coaches__info">
                   <p>Александр Пашков</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 6 лет</li>
@@ -241,7 +241,7 @@
                 <div class="coaches__info">
                   <p>Мария Кетова</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 7 лет</li>
@@ -256,7 +256,7 @@
                 <div class="coaches__info">
                   <p>Анна Павлова</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 4 года</li>
@@ -271,7 +271,7 @@
                 <div class="coaches__info">
                   <p>Алексей Лавров</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 5 лет</li>
@@ -286,7 +286,7 @@
                 <div class="coaches__info">
                   <p>Александр Пашков</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 6 лет</li>
@@ -301,7 +301,7 @@
                 <div class="coaches__info">
                   <p>Мария Кетова</p>
                   <p>CrossFit</p>
-                  <ul>
+                  <ul class="coaches__list">
                     <li>Certified Level 3 Trainer</li>
                     <li>Победитель чемпионата России по CrossFit </li>
                     <li>Опыт — 7 лет</li>
@@ -310,26 +310,38 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next coaches__btn coaches__btn-prev"></div>
-          <div class="swiper-button-prev coaches__btn coaches__btn-next"></div>
+          <div class="swiper-button-next coaches__btn coaches__btn--next"></div>
+          <div class="swiper-button-prev coaches__btn coaches__btn--prev"></div>
         </section>
 
         <section class="advantages">
           <h2>Наши преимущества</h2>
-          <div class="advantages__wrapper">
-            <ul>
-              <li>
-                <h3>100 Тренажеров</h3>
-                <p>Современные тренажеры на все группы мышц</p>
-              </li>
-              <li>
-                <div><span>900</span>кв/м</div>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+          <ul class="advantages__list">
+            <li>
+              <h3><span>100</span><br>Тренажеров</h3>
+              <p>Современные тренажеры на все группы мышц</p>
+            </li>
+            <li>
+              <div class="advantages__number advantages__number--special"><span>900</span><br>кв/м</div>
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+            </li>
+            <li>
+              <div class="advantages__number"><span>70 </span><br>машин</div>
+              <h3>Собственная парковка</h3>
+              <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+            </li>
+            <li>
+              <div class="advantages__number"><span>350</span><br>мест</div>
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </li>
+            <li>
+              <div class="advantages__number"><span>5+</span><br>лет</div>
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+            </li>
+          </ul>
         </section>
 
       </main>

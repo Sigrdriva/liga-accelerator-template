@@ -3044,7 +3044,7 @@ button,
 .subscription .subtitle {
   font-family: "Alumni Sans";
   font-weight: 600;
-  font-size: 42px;
+  font-size: 54px;
   line-height: normal;
   color: #102654;
   letter-spacing: 1.62px;
@@ -3075,7 +3075,7 @@ button,
 }
 
 .competition {
-  padding: 120px 103px;
+  padding: 120px 103px 106px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -3282,7 +3282,7 @@ button,
 
 .coaches {
   margin: 0 auto;
-  padding: 0 103px 105px;
+  padding: 0 103px 103px;
   position: relative;
   max-width: 1366px;
 }
@@ -3294,6 +3294,9 @@ button,
   line-height: normal;
   color: #102654;
   letter-spacing: 1.62px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-left: 2px;
 }
 
 .coaches__slide {
@@ -3302,19 +3305,23 @@ button,
 
 .coaches__info {
   position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
-.coaches__info *:not(:first-child) {
+.coaches__info > p:not(:first-child) {
   display: none;
+  padding: 0;
+  padding-bottom: 37px;
 }
 
 .coaches__info p:first-child {
-  margin: -50px 0 0;
   font-family: "Roboto Condensed";
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
+  margin: -49px 0 0;
 }
 
 .coaches__info p {
@@ -3325,18 +3332,238 @@ button,
   color: #ffffff;
 }
 
-.coaches__info ul {
+.coaches__list {
+  display: none;
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  padding: 0 0 0 41px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.coaches__list li {
+  position: relative;
+  padding-bottom: 13px;
+}
+.coaches__list li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 7px;
+  left: -16px;
+}
+
+.coaches__slide:hover > .coaches__info,
+.coaches__slide--hover > .coaches__info {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 38, 84, 0.89);
+  padding: 52px 30px;
 }
 
 .coaches__slide:hover > .coaches__info p,
-.coaches__slide:hover > .coaches__info ul {
+.coaches__slide:hover > .coaches__info ul,
+.coaches__slide--hover > .coaches__info p,
+.coaches__slide--hover > .coaches__info ul {
   display: block;
-} /* @mixin hover-focus {
+  margin: 0;
+  margin-bottom: -4px;
+}
+
+.coaches__btn {
+  width: 16px;
+  height: 32px;
+  color: #afafaf;
+  top: 265px;
+}
+.coaches__btn--prev {
+  background-image: url("../../img/svg/prev.svg");
+  left: 46px;
+}
+.coaches__btn--next {
+  background-image: url("../../img/svg/next.svg");
+  right: 48px;
+}
+.coaches__btn::after {
+  content: "";
+}
+
+.advantages {
+  background-color: #f8f9fc;
+  padding: 65px 163px 129px;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: normal;
+  color: #102654;
+  letter-spacing: 1.62px;
+  margin-bottom: 55px;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 240px 340px;
+  grid-template-columns: 340px 240px 340px;
+  gap: 0 60px;
+  list-style-type: none;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages__list li:first-child {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background-color: #1c3374;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 65px 34px 41px;
+  position: relative;
+}
+.advantages__list li:first-child::after, .advantages__list li:first-child::before {
+  content: "";
+  width: 340px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: rgba(209, 10, 66, 0.2);
+  top: 50%;
+}
+.advantages__list li:first-child::after {
+  right: 300px;
+}
+.advantages__list li:first-child::before {
+  left: 300px;
+}
+
+.advantages__list li:first-child h3 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  color: #ffffff;
+  margin: 7px 0;
+}
+
+.advantages__list li:first-child span {
+  font-size: 74px;
+  line-height: 37px;
+  margin-right: 5px;
+}
+
+.advantages__list li:first-child p {
+  margin-top: 32px;
+}
+
+.advantages__list li:not(:first-child) {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #102654;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  gap: 0 30px;
+  text-align: start;
+}
+
+.advantages__list li:nth-child(even) {
+  padding-left: 19px;
+}
+
+.advantages__list li:nth-child(odd):not(:first-child) {
+  padding-right: 5px;
+}
+
+.advantages__list li:nth-child(4), li:nth-child(5) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.advantages__list li:nth-child(4) p, li:nth-child(5) p {
+  margin-bottom: -7px;
+}
+
+.advantages__list li:nth-child(4) h3, li:nth-child(5) h3 {
+  margin-bottom: -27px;
+}
+
+li:nth-child(4) .advantages__number, li:nth-child(5) .advantages__number {
+  line-height: 10px;
+}
+
+li:nth-child(4) .advantages__number span, li:nth-child(5) .advantages__number span {
+  line-height: 72px;
+}
+
+.advantages__list li:last-child {
+  gap: 0 33px;
+}
+
+.advantages__number {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+}
+
+.advantages__number span {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 49.5px;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(143deg, #D10A42 0%, #0041CA 100%);
+}
+
+.advantages__number--special span {
+  background-image: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+}
+
+.advantages__list h3 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 20px;
+  color: #102654;
+  margin: 0;
+}
+
+.advantages__list li p {
+  margin-top: -46px;
+}
+
+/* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;

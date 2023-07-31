@@ -1,6 +1,6 @@
 .coaches {
   margin: 0 auto;
-  padding: 0 103px 105px;
+  padding: 0 103px 103px;
   position: relative;
   max-width: $vp-1366;
 }
@@ -8,6 +8,9 @@
 .coaches h2 {
   @include font-style("Alumni Sans", 600, 54px, normal, $color-text);
   letter-spacing: 1.62px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-left: 2px;
 }
 
 .coaches__slide {
@@ -16,33 +19,86 @@
 
 .coaches__info {
   position: absolute;
-  //   transform: translate(50%, 0);
-  //  left: 50%;
-  //
+  width: 100%;
+  text-align: center;
 }
 
-.coaches__info *:not(:first-child) {
+.coaches__info > p:not(:first-child) {
   display: none;
+  padding: 0;
+  padding-bottom: 37px;
 }
 
 .coaches__info p:first-child {
-  margin:  -50px 0 0;
   @include font-style("Roboto Condensed", 700, 18px, 27px, $color-default-white);
+  margin:  -49px 0 0;
 }
 
 .coaches__info p {
   @include font-style("Roboto Condensed", 400, 16px, 24px, $color-default-white);
 }
 
-.coaches__info ul {
+.coaches__list {
+  display: none;
   @include font-style("Roboto Condensed", 400, 14px, 21px, $color-default-white);
+  padding: 0 0 0 41px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.coaches__list li {
+  position: relative;
+  padding-bottom: 13px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 7px;
+    left: -16px;
+}
+  }
+
+.coaches__slide:hover > .coaches__info,
+.coaches__slide--hover > .coaches__info {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 38, 84, 0.89);
+  padding: 52px 30px;
 }
 
 .coaches__slide:hover > .coaches__info p,
-.coaches__slide:hover > .coaches__info ul {
+.coaches__slide:hover > .coaches__info ul,
+.coaches__slide--hover > .coaches__info p,
+.coaches__slide--hover > .coaches__info ul {
   display: block;
+  margin: 0;
+  margin-bottom: -4px;
 }
 
-// .coaches__btn {
+.coaches__btn {
+  width: 16px;
+  height: 32px;
+  color: #afafaf;
+  top: 265px;
 
-// }
+  &--prev {
+    background-image: url("../../img/svg/prev.svg");
+    left: 46px;
+  }
+
+  &--next {
+    background-image: url("../../img/svg/next.svg");
+    right: 48px;
+  }
+
+  &::after {
+    content: '';
+  }
+}
+
