@@ -3,6 +3,14 @@
   padding: 0 103px 103px;
   position: relative;
   max-width: $vp-1366;
+
+  @include vp-1365 {
+    padding: 0 101px 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 47px 70px;
+  }
 }
 
 .coaches h2 {
@@ -11,10 +19,37 @@
   margin-top: 0;
   margin-bottom: 48px;
   padding-left: 2px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    padding-left: 0;
+    margin-bottom: 42px;
+  }
 }
 
 .coaches__slide {
   position: relative;
+}
+
+.coaches__image {
+  @include vp-1365 {
+    display: block;
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .coaches__info {
@@ -32,6 +67,10 @@
 .coaches__info p:first-child {
   @include font-style("Roboto Condensed", 700, 18px, 27px, $color-default-white);
   margin:  -49px 0 0;
+
+  @include vp-1365 {
+    margin: -49px 0 0 9px;
+  }
 }
 
 .coaches__info p {
@@ -44,6 +83,10 @@
   padding: 0 0 0 41px;
   text-align: left;
   list-style-type: none;
+
+  @include vp-767 {
+    padding-left: 20px;
+  }
 }
 
 .coaches__list li {
@@ -70,6 +113,10 @@
   height: 100%;
   background-color: rgba(16, 38, 84, 0.89);
   padding: 52px 30px;
+
+  @include vp-767 {
+    padding: 42px 30px;
+  }
 }
 
 .coaches__slide:hover > .coaches__info p,
@@ -81,20 +128,59 @@
   margin-bottom: -4px;
 }
 
+.coaches__slide:hover > .coaches__info p,
+.coaches__slide--hover > .coaches__info p {
+  @include vp-1365 {
+    margin-left: -9px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
 .coaches__btn {
   width: 16px;
   height: 32px;
   color: #afafaf;
   top: 265px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1365 {
+    top: 234px;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+    top: 231px;
+  }
 
   &--prev {
     background-image: url("../../img/svg/prev.svg");
     left: 46px;
+
+    @include vp-1365 {
+      left: 44px;
+    }
+
+    @include vp-767 {
+      left: 15px;
+    }
   }
 
   &--next {
     background-image: url("../../img/svg/next.svg");
     right: 48px;
+
+    @include vp-1365 {
+      right: 46px;
+    }
+
+    @include vp-767 {
+      right: 15px;
+    }
   }
 
   &::after {
