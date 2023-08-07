@@ -1,0 +1,128 @@
+.accordion {
+  //max-width: 500px;
+  margin: 0 auto 50px auto;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+
+    @include vp-1365 {
+      padding-bottom: 16px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 3px;
+    }
+
+    .accordion__button {
+      @include vp-767 {
+        margin-top: 4px;
+        width: 32px
+      }
+    }
+  }
+
+  &__element {
+    margin-bottom: 14px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(28, 51, 116, 0.20);
+
+    @include vp-1365 {
+      margin-bottom: 18px;
+      padding-top: 8px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 2px;
+      padding-top: 8px;
+    }
+  }
+
+  &__element.is-active {
+    margin-bottom: 23px;
+
+    @include vp-767 {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__element.is-active > &__button-wrapper &__button {
+    background-image: url("../../img/FAQ-button-on.svg");
+  }
+
+  &__button {
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../../img/FAQ-button.svg");
+    background-repeat: no-repeat;
+
+    @include vp-767 {
+      background-size: contain;
+      margin-top: 10px;
+      margin-right: 1px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0;
+
+    p {
+      margin: 0;
+      @include font-style("Roboto Condensed", 300, 18px, 25px, $color-text);
+      padding-right: 178px;
+
+      @include vp-1365 {
+        padding-right: 120px;
+      }
+
+      @include vp-767  {
+        padding-right: 25px;
+        @include font-style("Roboto Condensed", 300, 16px, 22px, $color-text);
+      }
+    }
+  }
+}
+
+.accordion__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  margin-bottom: 10px;
+
+  @include vp-1365 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    padding-top: 12px;
+    margin-bottom: 13px;
+  }
+}
+
+.accordion__button-wrapper--short h3{
+  @include vp-767 {
+    padding-right: 39px;
+  }
+}
+
+.accordion__button-wrapper h3 {
+  @include font-style("Roboto Condensed", 500, 24px, 29px, $color-text);
+  letter-spacing: 0.07px;
+  margin: 0;
+
+  @include vp-767 {
+    @include font-style("Roboto Condensed", 500, 18px, 22px, $color-text);
+  }
+}

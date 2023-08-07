@@ -79,13 +79,13 @@
           <section class="component-demo is-active" data-tabs="element">
             <h2 class="subtitle">Абонементы</h2>
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
-              <div class="tabs__controls" data-tabs="controls">
+              <div class="tabs__controls tabs__controls--lined" data-tabs="controls">
                   <button class="tabs__control btn" type="button" data-tabs="control">1 месяц</button>
                   <button class="tabs__control btn" type="button" data-tabs="control">6 месяцев</button>
                   <button class="tabs__control btn" type="button" data-tabs="control">12 месяцев</button>
               </div>
               <div class="tabs__content" data-tabs="content">
-                <div class="tabs__element" data-tabs="element">
+                <div class="tabs__element tabs__element--lined" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -108,7 +108,7 @@
                     <button class="button button--not-special">купить абонемент</button>
                   </div>
                 </div>
-                <div class="tabs__element" data-tabs="element">
+                <div class="tabs__element tabs__element--lined" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -131,7 +131,7 @@
                     <button class="button button--not-special">купить абонемент</button>
                   </div>
                 </div>
-                <div class="tabs__element" data-tabs="element">
+                <div class="tabs__element tabs__element--lined" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -158,7 +158,6 @@
             </div>
           </section>
         </div>
-
 
         <section class="competition">
           <div class="competition__datetime">
@@ -385,6 +384,216 @@
               </div>
             </div>
           </div>
+        </section>
+
+        <div class="FAQ">
+          <section class="tabs no-transition-global is-active FAQ__wrapper" data-tabs="parent" data-delay="300">
+            <h2>Вопросы и ответы</h2>
+            <div class="tabs__controls FAQ__controls" data-tabs="controls">
+              <button class="tabs__control FAQ__control btn" type="button" data-tabs="control">Центр</button>
+              <button class="tabs__control FAQ__control btn is-active" type="button" data-tabs="control">Абонемент</button>
+              <button class="tabs__control FAQ__control btn" type="button" data-tabs="control">Услуги</button>
+              <button class="tabs__control FAQ__control btn" type="button" data-tabs="control">Правила</button>
+            </div>
+            <div class="tabs__content FAQ__content" data-tabs="content">
+              <div class="tabs__element" data-tabs="element">
+                <div class="accordion" data-accordion="parent" data-single="data-single">
+                  <div class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Как стать членом фитнес-центра?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Где можно посмотреть расписание?</h3>
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <div class="accordion" data-accordion="parent" data-single="data-single">
+                  <div class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Можно&nbsp;ли заморозить абонемент?</h3>
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <div class="accordion" data-accordion="parent" data-single="data-single">
+                  <div class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper accordion__button-wrapper--short">
+                      <h3>Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?</h3>
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели  и&nbsp;предложит программу питания.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели  и&nbsp;предложит программу питания.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Есть&nbsp;ли в&nbsp;центре детская комната?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели  и&nbsp;предложит программу питания.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <div class="accordion" data-accordion="parent" data-single="data-single">
+                  <div class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Как стать членом фитнес-центра?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Где можно посмотреть расписание?</h3>
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <div class="accordion__button-wrapper">
+                      <h3>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</h3>
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button"></button>
+                    </div>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="reviews">
+
         </section>
 
       </main>
