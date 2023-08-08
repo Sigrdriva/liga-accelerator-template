@@ -5,6 +5,10 @@
   & & {
     width: 90%;
     margin: 0 auto;
+
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
   }
 
   &__element:last-child {

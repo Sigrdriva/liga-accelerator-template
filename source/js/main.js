@@ -6,6 +6,7 @@ import {initTabs} from './modules/init-tabs';
 import {swiperCoach} from './modules/for-swiper';
 import {initAccordions} from './modules/init-accordion';
 import {changeActive} from './modules/init-accordion';
+import {swiperReview} from './modules/for-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     swiperCoach();
+    swiperReview();
     const form = new Form();
     window.form = form;
     form.init();
