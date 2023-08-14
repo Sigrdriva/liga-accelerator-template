@@ -1,0 +1,227 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include vp-1365 {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+}
+
+.feedback__free-class {
+  background-color: #102654;
+  padding: 66px 168px 69px 101px;
+
+  @include vp-1365 {
+    padding: 55px 161px 68px 131px;
+  }
+
+  @include vp-767 {
+    padding: 51px 14px 68px;
+  }
+}
+
+.feedback__free-class h2 {
+  @include font-style("Alumni Sans", 800, 54px, 64px, $color-default-white);
+  letter-spacing: 1.62px;
+  margin: 0 0 17px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    margin-bottom: 20px;
+  }
+}
+
+.feedback form {
+  display: grid;
+  gap: 0 30px;
+
+  @include vp-1365 {
+    gap: 0 60px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+.feedback__input {
+  grid-row: 1 / 2;
+  width: 190px;
+
+  @include vp-1365 {
+    width: 206px;
+    padding-bottom: 27px;
+  }
+
+  ::placeholder {
+    @include font-style("Roboto Condensed", 400, 14px, normal, $color-default-white);
+    opacity: 1;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.feedback__input input {
+  width: 190px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  @include font-style("Roboto Condensed", 400, 14px, normal, $color-default-white);
+  padding-bottom: 5px;
+
+  @include vp-1365 {
+    width: 206px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.feedback__button {
+  grid-column: 1 / 3;
+  justify-content: center;
+  @include font-style("Roboto Condensed", 700, 14px, normal, $color-default-white);
+  letter-spacing: 0.7px;
+  outline: none;
+  border: 3px solid white;
+  padding: 14px 50px;
+
+  @include vp-1365 {
+    min-height: 55px;
+  }
+
+  @include vp-767 {
+    margin-top: 6px;
+  }
+}
+
+.feedback__contacts {
+  padding: 56px 159px 64px 120px;
+  border-top: 1px solid #74819c;
+
+  @include vp-1365 {
+    border: none;
+    padding: 62px 140px 66px 133px;
+  }
+
+  @include vp-767 {
+    padding: 64px 15px;
+    margin: 0 auto;
+    min-width: 320px;
+  }
+}
+
+.feedback__contacts h2 {
+  @include font-style("Alumni Sans", 600, 54px, normal, $color-text);
+  letter-spacing: 1.62px;
+  margin: 0 0 37px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1.26px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    margin-bottom: 38px;
+  }
+}
+
+.feedback__contacts-wrapper {
+  display: grid;
+  gap: 18px 121px;
+  padding-left: 4px;
+  grid-template-columns: auto auto;
+  position: relative;
+
+  @include vp-1365 {
+    padding-left: 0;
+    gap: 25px 56px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::after {
+    content: "";
+    width: 1px;
+    height: 102px;
+    background-color: #74819c;
+    position: absolute;
+    top: 6px;
+    left: 234px;
+
+    @include vp-1365 {
+      height: 129px;
+      left: 266px;
+      top: 4px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.feedback__contacts-info:nth-child(3),
+.feedback__contacts-info:first-child {
+  @include vp-767 {
+    order: -1;
+  }
+}
+
+.feedback__contacts-info h3 {
+  @include font-style("Roboto Condensed", 700, 16px, 24px, $color-text);
+  margin: 0 0 3px;
+
+  @include vp-1365 {
+    @include font-style("Roboto Condensed", 700, 20px, normal, $color-text);
+    margin-bottom: 10px;
+  }
+}
+
+.feedback__contacts-info:last-child h3{
+  @include vp-767 {
+    margin-bottom: 13px;
+  }
+}
+
+.feedback__contacts-info p,
+.feedback__contacts-info a {
+  @include font-style("Roboto Condensed", 400, 14px, 21px, $color-text);
+  margin: 0;
+
+  @include vp-1365 {
+    @include font-style("Roboto Condensed", 400, 18px, normal, $color-text);
+  }
+}
+
+.feedback__contacts-info address {
+  @include font-style("Roboto Condensed", 400, 14px, 21px, $color-text);
+  font-style: normal;
+
+  @include vp-1365 {
+    @include font-style("Roboto Condensed", 400, 18px, normal, $color-text);
+  }
+}
