@@ -2124,12 +2124,6 @@ button,
   border: solid 2px #102654;
   padding: 24px;
   width: 208px;
-  margin-left: -8px;
-}
-@media (max-width: 1365px) {
-  .button--not-special {
-    margin-left: 0;
-  }
 }
 .button--not-special:hover, .button--not-special:focus, .button--not-special:active {
   background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
@@ -2911,7 +2905,7 @@ button,
 }
 
 .tabs__element--lined {
-  padding: 0 103px;
+  padding: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2932,13 +2926,13 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 163px;
+    padding: 0;
     gap: 40px;
   }
 }
 @media (max-width: 767px) {
   .tabs__element--lined {
-    padding: 0 15px;
+    padding: 0 6px;
     gap: 35px;
   }
 }
@@ -2951,7 +2945,7 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__card {
-    padding: 45px 42px 48px;
+    padding: 45px 34px 48px;
   }
 }
 .tabs__card--best {
@@ -2973,7 +2967,7 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__card:last-child {
-    padding: 42px 42px 47px;
+    padding: 42px 34px 47px;
     margin-top: 0;
   }
 }
@@ -3131,7 +3125,7 @@ button,
   min-width: 1366px;
   min-height: 851px;
   background: #f8f9fc;
-  padding: 120px 103px;
+  padding: 120px 103px 80px;
 }
 .subscription::after {
   position: absolute;
@@ -3142,7 +3136,7 @@ button,
 @media (max-width: 1365px) {
   .subscription {
     min-width: 768px;
-    padding: 100px 163px;
+    padding: 100px 163px 60px;
     min-height: 1779px;
   }
   .subscription::after {
@@ -3153,7 +3147,7 @@ button,
 @media (max-width: 767px) {
   .subscription {
     min-width: 320px;
-    padding: 63px 15px;
+    padding: 63px 9px 48px;
     min-height: 1487px;
   }
   .subscription::after {
@@ -3162,21 +3156,7 @@ button,
 }
 
 .subscription section {
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  width: 1366px;
-}
-@media (max-width: 1365px) {
-  .subscription section {
-    width: 768px;
-  }
-}
-@media (max-width: 767px) {
-  .subscription section {
-    width: 320px;
-  }
+  margin: 0 auto;
 }
 
 .subscription .subtitle {
@@ -4340,6 +4320,19 @@ li:nth-child(5) .advantages__number span {
   padding: 120px 103px 30px;
   max-width: 1366px;
   margin: 0 auto;
+}
+@media (max-width: 1365px) {
+  .FAQ__wrapper {
+    padding: 100px 45px 10px;
+  }
+}
+@media (max-width: 1365px) and (max-width: 767px) {
+  .FAQ__wrapper {
+    padding: 70px 15px 0;
+  }
+}
+
+.FAQ__tabs {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 260px 860px;
@@ -4347,18 +4340,12 @@ li:nth-child(5) .advantages__number span {
   gap: 0 40px;
 }
 @media (max-width: 1365px) {
-  .FAQ__wrapper {
+  .FAQ__tabs {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
-    padding: 100px 45px 10px;
     gap: 0;
-  }
-}
-@media (max-width: 1365px) and (max-width: 767px) {
-  .FAQ__wrapper {
-    padding: 70px 15px 0;
   }
 }
 

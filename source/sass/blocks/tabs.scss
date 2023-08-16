@@ -124,7 +124,7 @@
 }
 
 .tabs__element--lined {
-  padding: 0 103px;
+  padding: 0;
   width: 100%;
   display: flex;
   gap: 39px;
@@ -136,12 +136,12 @@
 
   @include vp-1365 {
     flex-direction: column;
-    padding: 0 163px;
+    padding: 0;
     gap: 40px;
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0 6px;
     gap: 35px;
   }
 }
@@ -152,7 +152,7 @@
   text-align: center;
 
   @include vp-767 {
-    padding: 45px 42px 48px;
+    padding: 45px 34px 48px;
   }
 
   &--best {
@@ -172,7 +172,7 @@
     }
 
     @include vp-767 {
-      padding: 42px 42px 47px;
+      padding: 42px 34px 47px;
       margin-top: 0;
     }
   }

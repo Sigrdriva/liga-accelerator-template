@@ -3,7 +3,7 @@
   min-width: $vp-1366;
   min-height: 851px;
   background: #f8f9fc;
-  padding: 120px 103px;
+  padding: 120px 103px 80px;
 
   &::after {
     position: absolute;
@@ -14,7 +14,7 @@
 
   @include vp-1365 {
     min-width: $vp-768;
-    padding: 100px 163px;
+    padding: 100px 163px 60px;
     min-height: 1779px;
 
     &::after {
@@ -25,7 +25,7 @@
 
   @include vp-767 {
     min-width: $vp-320;
-    padding: 63px 15px;
+    padding: 63px 9px 48px;
     min-height: 1487px;
 
     &::after {
@@ -35,17 +35,7 @@
 }
 
 .subscription section {
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: $vp-1366;
-
-  @include vp-1365 {
-    width: $vp-768;
-  }
-
-  @include vp-767 {
-    width: $vp-320;
-  }
+  margin: 0 auto;
 }
 
 .subscription .subtitle {

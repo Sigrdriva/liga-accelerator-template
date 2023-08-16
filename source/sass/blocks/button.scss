@@ -43,11 +43,6 @@
     border: solid 2px $color-text;
     padding: 24px;
     width: 208px;
-    margin-left: -8px;
-
-    @include vp-1365 {
-      margin-left: 0;
-    }
 
     &:hover,
     &:focus,
