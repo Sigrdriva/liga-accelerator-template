@@ -75,7 +75,7 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border-bottom: 1px solid #ff1553;
 
       &:focus,
       &:hover {
@@ -97,10 +97,11 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: -1px;
+    bottom: 3px;
 
     &.is-invalid {
+      @include font-style("Roboto Condensed", 400, 14px, 22px, #ff0000);
       color: #ff0000;
     }
 

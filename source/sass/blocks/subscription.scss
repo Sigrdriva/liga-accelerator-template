@@ -34,7 +34,7 @@
   }
 }
 
-.subscription  section {
+.subscription section {
   left: 50%;
   transform: translate(-50%, 0);
   width: $vp-1366;
@@ -48,13 +48,13 @@
   }
 }
 
-.subscription  .subtitle {
+.subscription .subtitle {
   @include font-style("Alumni Sans", 600, 54px, normal, $color-text);
   letter-spacing: 1.62px;
   text-align: center;
   margin: 0 0 12px;
 
-  @include vp-1365  {
+  @include vp-1365 {
     @include font-style("Alumni Sans", 600, 42px, normal, $color-text);
     letter-spacing: 1.26px;
     margin-bottom: 15px;

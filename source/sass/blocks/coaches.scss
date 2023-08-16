@@ -6,10 +6,12 @@
 
   @include vp-1365 {
     padding: 0 101px 100px;
+    max-width: $vp-768;
   }
 
   @include vp-767 {
     padding: 0 47px 70px;
+    max-width: $vp-320;
   }
 }
 
@@ -66,7 +68,7 @@
 
 .coaches__info p:first-child {
   @include font-style("Roboto Condensed", 700, 18px, 27px, $color-default-white);
-  margin:  -49px 0 0;
+  margin: -49px 0 0;
 
   @include vp-1365 {
     margin: -49px 0 0 9px;
@@ -78,8 +80,8 @@
 }
 
 .coaches__list {
-  display: none;
   @include font-style("Roboto Condensed", 400, 14px, 21px, $color-default-white);
+  display: none;
   padding: 0 0 0 41px;
   text-align: left;
   list-style-type: none;
@@ -94,7 +96,7 @@
   padding-bottom: 13px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     background-color: #ffffff;
@@ -103,8 +105,8 @@
     border-radius: 50%;
     top: 7px;
     left: -16px;
-}
   }
+}
 
 .coaches__slide:hover > .coaches__info,
 .coaches__slide--hover > .coaches__info {
@@ -140,51 +142,66 @@
 }
 
 .coaches__btn {
-  width: 16px;
-  height: 32px;
-  color: #afafaf;
-  top: 265px;
+  width: 56px;
+  height: 56px;
+  top: 254px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-image: url("../../img/svg/slider-button.svg");
 
   @include vp-1365 {
-    top: 234px;
+    top: 223px;
   }
 
   @include vp-767 {
-    width: 10px;
-    height: 19px;
-    top: 231px;
+    width: 35px;
+    height: 35px;
+    top: 224px;
+    background-size: 10px;
   }
 
   &--prev {
-    background-image: url("../../img/svg/prev.svg");
-    left: 46px;
+    left: 27px;
 
     @include vp-1365 {
-      left: 44px;
+      left: 25px;
     }
 
     @include vp-767 {
-      left: 15px;
+      left: 2px;
     }
   }
 
   &--next {
-    background-image: url("../../img/svg/next.svg");
-    right: 48px;
+    right: 27px;
+    transform: rotate(180deg);
 
     @include vp-1365 {
-      right: 46px;
+      right: 25px;
     }
 
     @include vp-767 {
-      right: 15px;
+      right: 2px;
     }
   }
 
   &::after {
-    content: '';
+    content: "";
+    position: absolute;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-text;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-image: url("../../img/svg/slider-button-active.svg");
+    border-radius: 50%;
+
+    @include vp-767 {
+      background-size: 100%;
+    }
   }
 }
-

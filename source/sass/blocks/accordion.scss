@@ -14,7 +14,7 @@
   &__element:last-child {
     margin-bottom: 0;
     padding-bottom: 14px;
-    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
     @include vp-1365 {
       padding-bottom: 16px;
@@ -27,7 +27,7 @@
     .accordion__button {
       @include vp-767 {
         margin-top: 4px;
-        width: 32px
+        width: 32px;
       }
     }
   }
@@ -35,7 +35,7 @@
   &__element {
     margin-bottom: 14px;
     padding-top: 8px;
-    border-top: 1px solid rgba(28, 51, 116, 0.20);
+    border-top: 1px solid rgba(28, 51, 116, 0.2);
 
     @include vp-1365 {
       margin-bottom: 18px;
@@ -57,7 +57,7 @@
   }
 
   &__element.is-active > &__button-wrapper &__button {
-    background-image: url("../../img/FAQ-button-on.svg");
+    background-image: url("../../img/svg/FAQ-button-on.svg");
   }
 
   &__button {
@@ -68,7 +68,7 @@
 
     cursor: pointer;
     background-color: transparent;
-    background-image: url("../../img/FAQ-button.svg");
+    background-image: url("../../img/svg/FAQ-button.svg");
     background-repeat: no-repeat;
 
     @include vp-767 {
@@ -76,23 +76,32 @@
       margin-top: 10px;
       margin-right: 1px;
     }
+
+    &:hover,
+    &:focus {
+      background-image: url("../../img/svg/FAQ-button-hover.svg");
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
   }
 
   &__wrapper {
     padding: 0;
 
     p {
-      margin: 0;
       @include font-style("Roboto Condensed", 300, 18px, 25px, $color-text);
+      margin: 0;
       padding-right: 178px;
 
       @include vp-1365 {
         padding-right: 120px;
       }
 
-      @include vp-767  {
-        padding-right: 25px;
+      @include vp-767 {
         @include font-style("Roboto Condensed", 300, 16px, 22px, $color-text);
+        padding-right: 25px;
       }
     }
   }
@@ -115,7 +124,7 @@
   }
 }
 
-.accordion__button-wrapper--short h3{
+.accordion__button-wrapper--short h3 {
   @include vp-767 {
     padding-right: 39px;
   }

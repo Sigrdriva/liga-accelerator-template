@@ -1,12 +1,13 @@
 .intro {
-  background: conic-gradient(from 90deg at 16.03% 39.06%, #B80027,  #003D85 62deg, #B80027 335deg);
+  background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
+
   margin: 0 auto;
 
   @include vp-1365 {
-    background: conic-gradient(from 88deg at 20.9% 38.8%,#b80027,#003d85 87deg,#b80027 341deg);
+    background: conic-gradient(from 88deg at 20.9% 38.8%, #b80027, #003d85 87deg, #b80027 341deg);
   }
 
   @include vp-767 {
-    background: conic-gradient(from 113deg at 35.31% 34.22%,#b80027,#003d85 93deg,#b80027 341deg);
+    background: conic-gradient(from 113deg at 35.31% 34.22%, #b80027, #003d85 93deg, #b80027 341deg);
   }
 }

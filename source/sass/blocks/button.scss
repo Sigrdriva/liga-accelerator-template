@@ -13,8 +13,8 @@
 
   @include vp-1365 {
     padding: 20px 30px;
-    min-width: 183px;
-    min-height: 57px;
+    min-width: 178px;
+    min-height: 55px;
   }
 
   &--special {
@@ -40,15 +40,38 @@
 
   &--not-special {
     color: $color-text;
-    outline: solid 2px $color-text;
+    border: solid 2px $color-text;
     padding: 24px;
-    width: 204px;
-    margin-left: -1px;
+    width: 208px;
+    margin-left: -8px;
 
+    @include vp-1365 {
+      margin-left: 0;
+    }
+
+    &:hover,
+    &:focus,
     &:active {
       background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
+      padding: 26px 24px;
+    }
+  }
+
+  &--special,
+  &--not-special {
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
       color: $color-default-white;
-      outline: none;
+    }
+
+    &:active {
+      color: rgba($color: $color-default-white, $alpha: 0.7);
+    }
+
+    &:disabled {
+      opacity: 0.3;
     }
   }
 }

@@ -1,6 +1,6 @@
 .advantages {
   background-color: #f8f9fc;
-  padding: 65px 163px 129px;
+  padding: 65px 163px 113px;
   text-align: center;
 
   @include vp-1365 {
@@ -47,15 +47,15 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     gap: 42px 0;
-    padding-bottom: 64px;
+    padding-bottom: 85px;
   }
 }
 
 .advantages__list li:first-child {
+  @include font-style("Roboto Condensed", 400, 16px, 24px, $color-default-white);
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   background-color: #1c3374;
-  @include font-style("Roboto Condensed", 400, 16px, 24px, $color-default-white);
   padding: 65px 34px 41px;
   position: relative;
 
@@ -73,13 +73,14 @@
     padding: 43px 74px;
   }
 
-  &::after, &::before {
-    content: '';
+  &::after,
+  &::before {
+    content: "";
     width: 340px;
     height: 2px;
     display: block;
     position: absolute;
-    background-color: rgba(209, 10, 66, 0.20);
+    background-color: rgba(209, 10, 66, 0.2);
     top: 50%;
 
     @include vp-1365 {
@@ -166,7 +167,8 @@
   }
 }
 
-.advantages__list li:nth-child(4), li:nth-child(5) {
+.advantages__list li:nth-child(4),
+.advantages__list li:nth-child(5) {
   align-items: end;
 
   @include vp-1365 {
@@ -178,7 +180,8 @@
   }
 }
 
-.advantages__list li:nth-child(4) p, li:nth-child(5) p {
+.advantages__list li:nth-child(4) p,
+.advantages__list li:nth-child(5) p {
   margin-bottom: -7px;
 
   @include vp-1365 {
@@ -186,7 +189,8 @@
   }
 }
 
-.advantages__list li:nth-child(4) h3, li:nth-child(5) h3 {
+.advantages__list li:nth-child(4) h3,
+.advantages__list li:nth-child(5) h3 {
   margin-bottom: -27px;
 
   @include vp-1365 {
@@ -199,7 +203,8 @@
   }
 }
 
-li:nth-child(4) .advantages__number, li:nth-child(5) .advantages__number {
+li:nth-child(4) .advantages__number,
+li:nth-child(5) .advantages__number {
   line-height: 10px;
 
   @include vp-1365 {
@@ -211,7 +216,8 @@ li:nth-child(4) .advantages__number, li:nth-child(5) .advantages__number {
   }
 }
 
-li:nth-child(4) .advantages__number span, li:nth-child(5) .advantages__number span {
+li:nth-child(4) .advantages__number span,
+li:nth-child(5) .advantages__number span {
   line-height: 72px;
 
   @include vp-767 {
@@ -224,14 +230,14 @@ li:nth-child(4) .advantages__number span, li:nth-child(5) .advantages__number sp
 }
 
 .advantages__number {
-  grid-row: 1 / 3;
   @include font-style("Roboto Condensed", 400, 14px, 21px, #2e35ac);
+  grid-row: 1 / 3;
 }
 
 .advantages__number span {
   @include font-style("Roboto Condensed", 700, 71px, 49.5px, transparent);
   background-clip: text;
-  background-image: linear-gradient(143deg, #D10A42 0%, #0041CA 100%);
+  background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
 
   @include vp-1365 {
     font-size: 58px;
@@ -240,7 +246,7 @@ li:nth-child(4) .advantages__number span, li:nth-child(5) .advantages__number sp
 }
 
 .advantages__number--special span {
-  background-image: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+  background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 }
 
 .advantages__list h3 {

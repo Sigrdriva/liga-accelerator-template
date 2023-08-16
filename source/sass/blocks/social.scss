@@ -2,5 +2,28 @@
   display: flex;
   gap: 11px;
   list-style-type: none;
-  margin:  0;
+  margin: 0;
+}
+
+.social__link {
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $color-default-white;
+    background-color: #103aae;
+  }
+
+  &:active .social__icon {
+    fill: $color-default-white;
+    background-color: #102654;
+  }
+
+  &:disabled .social__icon {
+    opacity: 0.5;
+  }
+}
+
+.social__icon {
+  fill: #030a1a;
+  background-color: $color-default-white;
+  border-radius: 50%;
 }
