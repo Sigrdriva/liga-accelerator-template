@@ -33,9 +33,12 @@ const changeActive = () => {
       activeTab[2].classList.add('is-active');
     }
   };
-  breakpointDesktop.addListener(breakpointChecker);
-  breakpointTablet.addListener(breakpointChecker);
-  breakpointChecker();
+
+  if (activeControl.length && activeTab.length) {
+    breakpointDesktop.addListener(breakpointChecker);
+    breakpointTablet.addListener(breakpointChecker);
+    breakpointChecker();
+  }
 };
 
 export {initAccordions, accordions, changeActive};

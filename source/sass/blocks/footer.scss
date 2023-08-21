@@ -55,13 +55,13 @@
     }
   }
 
-  &:nth-child(1) {
+  &.footer__navigation-item--service {
     @include vp-767 {
       grid-row-start: 2;
     }
   }
 
-  &:nth-child(2) {
+  &.footer__navigation-item--subscription {
     @include vp-767 {
       grid-row-start: 3;
     }
@@ -73,7 +73,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &.footer__navigation-item--stock {
     @include vp-767 {
       grid-row-start: 1;
     }

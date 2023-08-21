@@ -2,21 +2,28 @@ const video = document.querySelector('.gym__video');
 const videoButton = document.querySelector('.gym__button');
 
 function videoButtonOnClick() {
-  if (video.paused) {
+  if (video && videoButton && video.paused) {
     video.play();
     videoButton.style.display = 'none';
-  } else {
+  } else if (video && videoButton) {
     video.pause();
   }
 }
 
 function videoOnClick() {
-  video.pause();
-  videoButton.style.display = 'block';
+  if (video && videoButton) {
+    video.pause();
+    videoButton.style.display = 'block';
+  }
 }
 
-videoButton.addEventListener('click', videoButtonOnClick);
-video.addEventListener('click', videoOnClick);
+if (videoButton) {
+  videoButton.addEventListener('click', videoButtonOnClick);
+}
+
+if (video) {
+  video.addEventListener('click', videoOnClick);
+}
 
 function changePoster() {
   if (window.innerWidth < 1366 && window.innerWidth > 767) {

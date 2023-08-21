@@ -37,7 +37,7 @@
 }
 
 @mixin font-style($family: "Roboto Condensed", $weight: 300, $size: 16px, $height: normal, $color: $color-text) {
-  font-family: $family;
+  font-family: $family, Verdana, sans-serif;
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
