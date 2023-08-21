@@ -2103,18 +2103,18 @@ button,
   }
 }
 .button--special {
-  background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(97deg, #ed0233 0%, hsl(220deg, 100%, 36%) 100%);
   padding: 25px 24px;
   width: 204px;
   margin-left: -1px;
 }
-.button:hover {
+.button:hover, .button:focus {
   color: #103aae;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 .button:active {
   color: #102654;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 .button:disabled {
   opacity: 0.5;
@@ -2128,10 +2128,10 @@ button,
 .button--not-special:hover, .button--not-special:focus, .button--not-special:active {
   background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
   padding: 26px 24px;
+  color: #ffffff;
 }
 .button--special:hover, .button--special:focus, .button--special:active, .button--not-special:hover, .button--not-special:focus, .button--not-special:active {
   border: none;
-  color: #ffffff;
 }
 .button--special:active, .button--not-special:active {
   color: rgba(255, 255, 255, 0.7);

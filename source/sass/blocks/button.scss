@@ -18,20 +18,23 @@
   }
 
   &--special {
-    background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(97deg, #ed0233 0%, hsl(220, 100%, 36%) 100%);
     padding: 25px 24px;
     width: 204px;
     margin-left: -1px;
+
+
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #103aae;
-    background-color: $color-default-white;
+    background: $color-default-white;
   }
 
   &:active {
     color: $color-text;
-    background-color: $color-default-white;
+    background: $color-default-white;
   }
 
   &:disabled {
@@ -49,6 +52,7 @@
     &:active {
       background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
       padding: 26px 24px;
+      color: $color-default-white;
     }
   }
 
@@ -58,7 +62,6 @@
     &:focus,
     &:active {
       border: none;
-      color: $color-default-white;
     }
 
     &:active {
