@@ -2485,7 +2485,7 @@ button,
   height: 100px;
   border: none;
   background: transparent;
-  background-image: url("../../img/svg/video-button.svg");
+  background-image: url("../img/svg/video-button.svg");
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -2497,15 +2497,15 @@ button,
 
 .gym__button:hover,
 .gym__button:focus {
-  background-image: url("../../img/svg/video-button-hover.svg");
+  background-image: url("../img/svg/video-button-hover.svg");
 }
 
 .gym__button:active {
-  background-image: url("../../img/svg/video-button-active.svg");
+  background-image: url("../img/svg/video-button-active.svg");
 }
 
 .gym__button:disabled {
-  background-image: url("../../img/video-button-hover.svg");
+  background-image: url("../img/video-button-hover.svg");
   opacity: 0.4;
 }
 
@@ -2624,15 +2624,15 @@ button,
 .tabs__card--best {
   padding: 56px 72px 60px;
   border: 7px solid transparent;
-  -o-border-image: url("../../img/subscription-border.png") 1 stretch;
-  border-image: url("../../img/subscription-border.png") 1 stretch;
+  -o-border-image: url("../img/subscription-border.png") 1 stretch;
+  border-image: url("../img/subscription-border.png") 1 stretch;
 }
 
 .tabs__card:hover,
 .tabs__card:focus {
   border: 7px solid transparent;
-  -o-border-image: url("../../img/subscription-border.png") 1 stretch;
-  border-image: url("../../img/subscription-border.png") 1 stretch;
+  -o-border-image: url("../img/subscription-border.png") 1 stretch;
+  border-image: url("../img/subscription-border.png") 1 stretch;
 }
 
 .tabs__card:hover button:not(.button--special),
@@ -2754,7 +2754,7 @@ button,
 
 .subscription::after {
   position: absolute;
-  content: url("../../img/weight-plates-desktop.png");
+  content: url("../img/weight-plates-desktop.png");
   bottom: -157px;
   right: 0;
 }
@@ -2989,7 +2989,7 @@ button,
   top: 254px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/svg/slider-button.svg");
+  background-image: url("../img/svg/slider-button.svg");
 }
 
 .coaches__btn--prev {
@@ -3015,7 +3015,7 @@ button,
 }
 
 .coaches__btn:active {
-  background-image: url("../../img/svg/slider-button-active.svg");
+  background-image: url("../img/svg/slider-button-active.svg");
   border-radius: 50%;
 }
 
@@ -3477,7 +3477,7 @@ button,
 }
 
 .accordion__element.is-active > .accordion__button-wrapper .accordion__button {
-  background-image: url("../../img/svg/FAQ-button-on.svg");
+  background-image: url("../img/svg/FAQ-button-on.svg");
 }
 
 .accordion__button {
@@ -3487,13 +3487,13 @@ button,
   text-transform: uppercase;
   cursor: pointer;
   background-color: transparent;
-  background-image: url("../../img/svg/FAQ-button.svg");
+  background-image: url("../img/svg/FAQ-button.svg");
   background-repeat: no-repeat;
 }
 
 .accordion__button:hover,
 .accordion__button:focus {
-  background-image: url("../../img/svg/FAQ-button-hover.svg");
+  background-image: url("../img/svg/FAQ-button-hover.svg");
 }
 
 .accordion__button:disabled {
@@ -4095,7 +4095,7 @@ button,
   }
 
   .subscription::after {
-    content: url("../../img/weight-plates-tablet.png");
+    content: url("../img/weight-plates-tablet.png");
     bottom: -132px;
   }
 

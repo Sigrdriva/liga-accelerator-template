@@ -138,7 +138,7 @@
   height: 100px;
   border: none;
   background: transparent;
-  background-image: url("../../img/svg/video-button.svg");
+  background-image: url("../img/svg/video-button.svg");
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -152,15 +152,15 @@
 
   &:hover,
   &:focus {
-    background-image: url("../../img/svg/video-button-hover.svg");
+    background-image: url("../img/svg/video-button-hover.svg");
   }
 
   &:active {
-    background-image: url("../../img/svg/video-button-active.svg");
+    background-image: url("../img/svg/video-button-active.svg");
   }
 
   &:disabled {
-    background-image: url("../../img/video-button-hover.svg");
+    background-image: url("../img/video-button-hover.svg");
     opacity: 0.4;
   }
 }

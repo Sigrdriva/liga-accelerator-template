@@ -147,7 +147,7 @@
   top: 254px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/svg/slider-button.svg");
+  background-image: url("../img/svg/slider-button.svg");
 
   @include vp-1365 {
     top: 223px;
@@ -197,7 +197,7 @@
   }
 
   &:active {
-    background-image: url("../../img/svg/slider-button-active.svg");
+    background-image: url("../img/svg/slider-button-active.svg");
     border-radius: 50%;
 
     @include vp-767 {

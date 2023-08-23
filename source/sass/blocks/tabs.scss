@@ -158,7 +158,7 @@
   &--best {
     padding: 56px 72px 60px;
     border: 7px solid transparent;
-    border-image: url("../../img/subscription-border.png") 1 stretch;
+    border-image: url("../img/subscription-border.png") 1 stretch;
 
     @include vp-767 {
       padding: 44px 35px 48px;
@@ -182,7 +182,7 @@
   &:hover,
   &:focus {
     border: 7px solid transparent;
-    border-image: url("../../img/subscription-border.png") 1 stretch;
+    border-image: url("../img/subscription-border.png") 1 stretch;
 
     button:not(.button--special) {
       background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
