@@ -25,9 +25,10 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus:not(.focus-visible) {
     color: #103aae;
     background: $color-default-white;
+    outline: solid 4px $color-default-white;
   }
 
   &:active {
@@ -69,5 +70,10 @@
     &:disabled {
       opacity: 0.3;
     }
+  }
+
+  &--form:hover,
+  &--form:focus:not(.focus-visible) {
+    outline: none;
   }
 }

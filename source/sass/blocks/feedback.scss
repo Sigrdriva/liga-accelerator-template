@@ -21,6 +21,11 @@
   }
 }
 
+.feedback__free-class-wrapper {
+  max-width: 683px;
+  margin-left: auto;
+}
+
 .feedback__free-class h2 {
   @include font-style("Alumni Sans", 800, 54px, 64px, $color-default-white);
   letter-spacing: 1.62px;
@@ -148,6 +153,11 @@
   }
 }
 
+.feedback__contacts-wrapper {
+  max-width: 683px;
+  margin-right: auto;
+}
+
 .feedback__contacts h2 {
   @include font-style("Alumni Sans", 600, 54px, normal, $color-text);
   letter-spacing: 1.62px;
@@ -168,7 +178,7 @@
   }
 }
 
-.feedback__contacts-wrapper {
+.feedback__contacts-info-wrapper {
   display: grid;
   gap: 18px 121px;
   padding-left: 4px;

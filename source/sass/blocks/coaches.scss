@@ -109,7 +109,8 @@
 }
 
 .coaches__slide:hover > .coaches__info,
-.coaches__slide--hover > .coaches__info {
+.coaches__slide--hover > .coaches__info,
+.coaches__slide:focus > .coaches__info {
   top: 0;
   width: 100%;
   height: 100%;
@@ -124,14 +125,17 @@
 .coaches__slide:hover > .coaches__info p,
 .coaches__slide:hover > .coaches__info ul,
 .coaches__slide--hover > .coaches__info p,
-.coaches__slide--hover > .coaches__info ul {
+.coaches__slide--hover > .coaches__info ul,
+.coaches__slide:focus > .coaches__info p,
+.coaches__slide:focus > .coaches__info ul {
   display: block;
   margin: 0;
   margin-bottom: -4px;
 }
 
 .coaches__slide:hover > .coaches__info p,
-.coaches__slide--hover > .coaches__info p {
+.coaches__slide--hover > .coaches__info p,
+.coaches__slide:focus > .coaches__info p {
   @include vp-1365 {
     margin-left: -9px;
   }

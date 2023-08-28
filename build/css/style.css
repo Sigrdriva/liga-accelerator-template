@@ -1305,6 +1305,7 @@ html {
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1739,7 +1740,7 @@ button,
 .custom-input .input-message,
 .custom-textarea .input-message {
   position: absolute;
-  right: -1px;
+  left: -1px;
   bottom: 3px;
 }
 
@@ -2174,9 +2175,10 @@ button,
 }
 
 .button:hover,
-.button:focus {
+.button:focus:not(.focus-visible) {
   color: #103aae;
   background: #ffffff;
+  outline: solid 4px #ffffff;
 }
 
 .button:active {
@@ -2220,6 +2222,11 @@ button,
 .button--special:disabled,
 .button--not-special:disabled {
   opacity: 0.3;
+}
+
+.button--form:hover,
+.button--form:focus:not(.focus-visible) {
+  outline: none;
 }
 
 .intro {
@@ -2335,6 +2342,10 @@ button,
 }
 
 .footer {
+  background: #030a1a;
+}
+
+.footer__wrapper {
   padding: 40px 103px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2342,7 +2353,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #030a1a;
 }
 
 .footer__navigation {
@@ -2351,7 +2361,16 @@ button,
   display: flex;
   gap: 20px;
   padding-left: 48px;
-  padding-bottom: 5px;
+}
+
+.footer__navigation div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 3px 10px;
+}
+
+.footer__navigation div:focus-within {
+  outline: 1px solid #ffffff;
 }
 
 .footer__navigation a {
@@ -2362,7 +2381,6 @@ button,
   color: #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 5px 10px;
 }
 
 .footer__navigation a:hover {
@@ -2371,7 +2389,6 @@ button,
 }
 
 .footer__navigation a:focus:not(.focus-visible) {
-  outline: 1px solid #ffffff;
   border: none;
 }
 
@@ -2700,10 +2717,6 @@ button,
   overflow-x: hidden;
 }
 
-[data-tabs=parent] {
-  overflow: hidden;
-}
-
 [data-tabs=parent].no-transition > [data-tabs=control],
 [data-tabs=parent].no-transition > [data-tabs=content],
 [data-tabs=parent].no-transition > [data-tabs=element] {
@@ -2884,6 +2897,10 @@ button,
   padding: 15px 50px;
 }
 
+.competition__picture {
+  background-color: #010245;
+}
+
 .coaches {
   margin: 0 auto;
   padding: 0 103px 103px;
@@ -2966,7 +2983,8 @@ button,
 }
 
 .coaches__slide:hover > .coaches__info,
-.coaches__slide--hover > .coaches__info {
+.coaches__slide--hover > .coaches__info,
+.coaches__slide:focus > .coaches__info {
   top: 0;
   width: 100%;
   height: 100%;
@@ -2977,7 +2995,9 @@ button,
 .coaches__slide:hover > .coaches__info p,
 .coaches__slide:hover > .coaches__info ul,
 .coaches__slide--hover > .coaches__info p,
-.coaches__slide--hover > .coaches__info ul {
+.coaches__slide--hover > .coaches__info ul,
+.coaches__slide:focus > .coaches__info p,
+.coaches__slide:focus > .coaches__info ul {
   display: block;
   margin: 0;
   margin-bottom: -4px;
@@ -3377,6 +3397,10 @@ button,
   opacity: 0.3;
 }
 
+.sales__picture {
+  background-color: #4a7ee5;
+}
+
 .FAQ {
   background-color: #f8f9fc;
 }
@@ -3556,9 +3580,12 @@ button,
 
 .reviews {
   margin: 0 auto;
-  padding: 120px 403px;
+  padding: 120px;
   position: relative;
-  max-width: 1366px;
+}
+
+.reviews__slider {
+  width: 560px;
 }
 
 .reviews h2 {
@@ -3626,7 +3653,7 @@ button,
   top: 338px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/svg/slider-button.svg");
+  background-image: url("../img/svg/slider-button.svg");
 }
 
 .reviews__btn--prev {
@@ -3652,7 +3679,7 @@ button,
 }
 
 .reviews__btn:active {
-  background-image: url("../../img/svg/slider-button-active.svg");
+  background-image: url("../img/svg/slider-button-active.svg");
   border-radius: 50%;
 }
 
@@ -3666,6 +3693,11 @@ button,
 .feedback__free-class {
   background-color: #102654;
   padding: 66px 168px 69px 101px;
+}
+
+.feedback__free-class-wrapper {
+  max-width: 683px;
+  margin-left: auto;
 }
 
 .feedback__free-class h2 {
@@ -3807,6 +3839,11 @@ button,
   border-top: 1px solid #74819c;
 }
 
+.feedback__contacts-wrapper {
+  max-width: 683px;
+  margin-right: auto;
+}
+
 .feedback__contacts h2 {
   font-family: "Alumni Sans", Verdana, sans-serif;
   font-weight: 600;
@@ -3817,7 +3854,7 @@ button,
   margin: 0 0 37px;
 }
 
-.feedback__contacts-wrapper {
+.feedback__contacts-info-wrapper {
   display: -ms-grid;
   display: grid;
   gap: 18px 121px;
@@ -3827,7 +3864,7 @@ button,
   position: relative;
 }
 
-.feedback__contacts-wrapper ::after {
+.feedback__contacts-info-wrapper ::after {
   content: "";
   width: 1px;
   height: 102px;
@@ -3981,7 +4018,7 @@ button,
     margin-top: 12px;
   }
 
-  .footer {
+  .footer__wrapper {
     padding: 42px 45px 35px;
   }
 
@@ -4213,7 +4250,8 @@ button,
   }
 
   .coaches__slide:hover > .coaches__info p,
-  .coaches__slide--hover > .coaches__info p {
+  .coaches__slide--hover > .coaches__info p,
+  .coaches__slide:focus > .coaches__info p {
     margin-left: -9px;
   }
 
@@ -4420,6 +4458,10 @@ button,
     padding: 91px 101px 99px;
   }
 
+  .reviews__slider {
+    width: 566px;
+  }
+
   .reviews h2 {
     font-size: 42px;
     letter-spacing: 1.26px;
@@ -4491,12 +4533,12 @@ button,
     margin-bottom: 35px;
   }
 
-  .feedback__contacts-wrapper {
+  .feedback__contacts-info-wrapper {
     padding-left: 0;
     gap: 25px 56px;
   }
 
-  .feedback__contacts-wrapper ::after {
+  .feedback__contacts-info-wrapper ::after {
     height: 129px;
     left: 266px;
     top: 4px;
@@ -4617,7 +4659,7 @@ button,
     margin: 25px 3px 0;
   }
 
-  .footer {
+  .footer__wrapper {
     display: -ms-grid;
     display: grid;
     padding: 45px 15px 45px;
@@ -4849,12 +4891,14 @@ button,
   }
 
   .coaches__slide:hover > .coaches__info,
-  .coaches__slide--hover > .coaches__info {
+  .coaches__slide--hover > .coaches__info,
+  .coaches__slide:focus > .coaches__info {
     padding: 42px 30px;
   }
 
   .coaches__slide:hover > .coaches__info p,
-  .coaches__slide--hover > .coaches__info p {
+  .coaches__slide--hover > .coaches__info p,
+  .coaches__slide:focus > .coaches__info p {
     margin-left: 0;
   }
 
@@ -4903,7 +4947,7 @@ button,
   }
 
   .advantages__item:nth-child(even) {
-    padding: 0 44px;
+    padding: 0 46px;
   }
 
   .advantages__item:nth-child(odd):not(.advantages__item--central) {
@@ -4941,6 +4985,10 @@ button,
   .advantages__item--comfort,
   .advantages__item--experience {
     padding: 0 48px 14px;
+  }
+
+  .advantages__item--comfort p {
+    margin-bottom: -7px;
   }
 
   .advantages__item--comfort h3,
@@ -5099,6 +5147,10 @@ button,
     padding: 63px 47px 70px;
   }
 
+  .reviews__slider {
+    width: 226px;
+  }
+
   .reviews h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
@@ -5203,7 +5255,7 @@ button,
     margin-bottom: 38px;
   }
 
-  .feedback__contacts-wrapper {
+  .feedback__contacts-info-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5213,7 +5265,7 @@ button,
     flex-direction: column;
   }
 
-  .feedback__contacts-wrapper ::after {
+  .feedback__contacts-info-wrapper ::after {
     display: none;
   }
 

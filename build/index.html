@@ -44,7 +44,7 @@
               <source media="(max-width: 768px)" srcset="./img/hero-tablet.jpg 1x, ./img/hero-tablet@2x.jpg 2x">
               <img src="./img/hero-desktop.jpg" width="500" height="556" srcset="./img/hero-desktop@2x.jpg 2x" alt="Мужчина в футболке супермена.">
             </picture>
-            <button class="hero__buy button">Купить абонемент</button>
+            <a class="hero__buy button" href="#subscription">Купить абонемент</a>
           </div>
         </section>
 
@@ -71,7 +71,7 @@
           </div>
         </section>
 
-        <div class="subscription">
+        <div class="subscription" id="subscription">
           <section class="component-demo is-active">
             <h2 class="subtitle">Абонементы</h2>
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
@@ -167,8 +167,8 @@
             <p>Ежегодные соревнования по CrossFit</p>
             <button class="competition__button button">заполнить заявку</button>
           </div>
-          <div>
-            <picture class="competition__picture">
+          <div class="competition__picture">
+            <picture>
               <source type="image/webp" media="(max-width: 320px)" srcset="./img/competition-phone.webp 1x, ./img/competition-phone@2x.webp 2x">
               <source type="image/webp" media="(max-width: 768px)" srcset="./img/competition-tablet.webp 1x, ./img/competition-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/competition-desktop.webp 1x, ./img/competition-desktop@2x.webp 2x">
@@ -181,9 +181,10 @@
 
         <section class="coaches">
           <h2>Тренеры</h2>
+          <div class="swiper-button-prev coaches__btn coaches__btn--prev"></div>
           <div class="swiper coaches__slider">
             <div class="swiper-wrapper coaches__slider-wrapper">
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Anna.webp 1x, ./img/coaches/Anna@2x.webp 2x">
                   <img class="coaches__image coaches__image--Anna" src="./img/coaches/Anna.jpg" width="260" height="294" srcset="./img/coaches/Anna@2x.jpg 2x" alt="Анна Павлова.">
@@ -198,7 +199,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Alexei.webp 1x, ./img/coaches/Alexei@2x.webp 2x">
                   <img class="coaches__image coaches__image--Alexei" src="./img/coaches/Alexei.jpg" width="260" height="294" srcset="./img/coaches/Alexei@2x.jpg 2x" alt="Алексей Лавров.">
@@ -213,7 +214,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide coaches__slide--hover">
+              <div class="swiper-slide coaches__slide coaches__slide--hover" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 768px)" srcset="./img/coaches/Alexander-tablet.webp 1x, ./img/coaches/Alexander-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/coaches/Alexander.webp 1x, ./img/coaches/Alexander@2x.webp 2x">
@@ -230,7 +231,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 768px)" srcset="./img/coaches/Maria-tablet.webp 1x, ./img/coaches/Maria-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/coaches/Maria.webp 1x, ./img/coaches/Maria@2x.webp 2x">
@@ -247,7 +248,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Anna.webp 1x, ./img/coaches/Anna@2x.webp 2x">
                   <img class="coaches__image coaches__image--Anna" src="./img/coaches/Anna.jpg" width="260" height="294" srcset="./img/coaches/Anna@2x.jpg 2x" alt="Анна Павлова.">
@@ -262,7 +263,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Alexei.webp 1x, ./img/coaches/Alexei@2x.webp 2x">
                   <img class="coaches__image coaches__image--Alexei" src="./img/coaches/Alexei.jpg" width="260" height="294" srcset="./img/coaches/Alexei@2x.jpg 2x" alt="Алексей Лавров.">
@@ -277,7 +278,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Alexander.webp 1x, ./img/coaches/Alexander@2x.webp 2x">
                   <img class="coaches__image coaches__image--Alexander" src="./img/coaches/Alexander.jpg" width="260" height="294" srcset="./img/coaches/Alexander@2x.jpg 2x" alt="Александр Пашков.">
@@ -292,7 +293,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" srcset="./img/coaches/Maria.webp 1x, ./img/coaches/Maria@2x.webp 2x">
                   <img class="coaches__image coaches__image--Maria" src="./img/coaches/Maria.jpg" width="260" height="294" srcset="./img/coaches/Maria@2x.jpg 2x" alt="Мария Кетова.">
@@ -310,7 +311,6 @@
             </div>
           </div>
           <div class="swiper-button-next coaches__btn coaches__btn--next"></div>
-          <div class="swiper-button-prev coaches__btn coaches__btn--prev"></div>
         </section>
 
         <section class="advantages">
@@ -621,46 +621,48 @@
             </div>
           </div>
           <div class="swiper-button-next reviews__btn reviews__btn--next">
-
           </div>
           <div class="swiper-button-prev reviews__btn reviews__btn--prev">
-
           </div>
         </section>
 
         <div class="feedback">
           <section class="feedback__free-class">
-            <h2>Бесплатное занятие</h2>
-            <div data-form-validate="data-form-validate" data-callback="base">
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                <div class="custom-input feedback__input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                  <input type="text" placeholder="Имя" aria-label="Введите имя">
-                </div>
-                <div class="custom-input feedback__input" data-validate-type="matrix" data-matrix-limitation="digit" data-matrix="____ ______" data-message-base="Поле обязательно к заполнению" data-required="data-required" >
-                  <input type="tel" placeholder="Телефон" aria-label="Введите телефон">
-                </div>
-                <button class="feedback__button button btn btn--form">отправить</button>
-              </form>
+            <div class="feedback__free-class-wrapper">
+              <h2>Бесплатное занятие</h2>
+              <div data-form-validate="data-form-validate" data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="custom-input feedback__input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <input type="text" placeholder="Имя" aria-label="Введите имя">
+                  </div>
+                  <div class="custom-input feedback__input" data-validate-type="phone" data-matrix-limitation="digit" data-message-base="Поле обязательно к заполнению" data-message-extra="Некорректное заполнение" data-required="data-required">
+                    <input type="tel" placeholder="Телефон" aria-label="Введите телефон" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}">
+                  </div>
+                  <button class="feedback__button button button--form btn">отправить</button>
+                </form>
+              </div>
             </div>
           </section>
           <section class="feedback__contacts">
-            <h2>Контакты</h2>
             <div class="feedback__contacts-wrapper">
-              <div class="feedback__contacts-info">
-                <h3>Адрес:</h3>
-                <address>г. Омск, ул. 60 лет Октября, 7</address>
-              </div>
-              <div class="feedback__contacts-info">
-                <h3>Телефон:</h3>
-                <p><a href="tel:+78005555555">8-800-555-55-55</a></p>
-              </div>
-              <div class="feedback__contacts-info">
-                <h3>График работы:</h3>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-              <div class="feedback__contacts-info">
-                <h3>Email:</h3>
-                <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+              <h2>Контакты</h2>
+              <div class="feedback__contacts-info-wrapper">
+                <div class="feedback__contacts-info">
+                  <h3>Адрес:</h3>
+                  <address>г. Омск, ул. 60 лет Октября, 7</address>
+                </div>
+                <div class="feedback__contacts-info">
+                  <h3>Телефон:</h3>
+                  <p><a href="tel:+78005555555">8-800-555-55-55</a></p>
+                </div>
+                <div class="feedback__contacts-info">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </div>
+                <div class="feedback__contacts-info">
+                  <h3>Email:</h3>
+                  <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+                </div>
               </div>
             </div>
           </section>
@@ -669,37 +671,39 @@
       </main>
 
       <footer>
-        <div class="container footer">
-          <a class="footer__logo" href="#">
-            <img src="./img/svg/logo.svg" alt="Фитнес центр Supergum." width="88" height="32">
-          </a>
-          <nav class="footer__navigation">
-            <a class="footer__navigation-item footer__navigation-item--service" href="#">Услуги</a>
-            <a class="footer__navigation-item footer__navigation-item--subscription" href="#">Абонементы</a>
-            <a class="footer__navigation-item footer__navigation-item--stock" href="#">Акции</a>
-            <a class="footer__navigation-item" href="#">Тренеры</a>
-            <a class="footer__navigation-item" href="#">Расписание</a>
-          </nav>
-          <ul class="footer__social social">
-            <li>
-              <a class="social__link social__link--vk" href="#">
-                <span class="visually-hidden">Мы Вконтакте</span>
-                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#vk-icon"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a class="social__link social__link--ok" href="#">
-                <span class="visually-hidden">Мы в Одноклассниках</span>
-                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#ok-icon"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a class="social__link social__link--re" href="#">
-                <span class="visually-hidden">Мы на Реддите</span>
-                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#re-icon"></use></svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer">
+          <div class="footer__wrapper container">
+            <a class="footer__logo" href="#">
+              <img src="./img/svg/logo.svg" alt="Фитнес центр Supergum." width="88" height="32">
+            </a>
+            <nav class="footer__navigation">
+              <div><a class="footer__navigation-item footer__navigation-item--service" href="#">Услуги</a></div>
+              <div><a class="footer__navigation-item footer__navigation-item--subscription" href="#">Абонементы</a></div>
+              <div><a class="footer__navigation-item footer__navigation-item--stock" href="#">Акции</a></div>
+              <div><a class="footer__navigation-item" href="#">Тренеры</a></div>
+              <div><a class="footer__navigation-item" href="#">Расписание</a></div>
+            </nav>
+            <ul class="footer__social social">
+              <li>
+                <a class="social__link social__link--vk" href="#">
+                  <span class="visually-hidden">Мы Вконтакте</span>
+                  <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#vk-icon"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a class="social__link social__link--ok" href="#">
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                  <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#ok-icon"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a class="social__link social__link--re" href="#">
+                  <span class="visually-hidden">Мы на Реддите</span>
+                  <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><use href="./img/sprite.svg#re-icon"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>
