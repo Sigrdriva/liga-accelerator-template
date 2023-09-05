@@ -1658,24 +1658,6 @@ button,
 .custom-textarea.is-invalid textarea {
   border-bottom: 1px solid #ff1553;
 }
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
-}
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
-}
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
-}
 .custom-input .input-message,
 .custom-textarea .input-message {
   position: absolute;
@@ -2120,8 +2102,6 @@ button,
   background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
   padding: 26px 24px;
   color: #ffffff;
-}
-.button--subscription:hover, .button--subscription:focus, .button--subscription:active {
   border: none;
 }
 .button--subscription:active {
@@ -2377,6 +2357,7 @@ button,
   width: 226px;
   height: 55px;
   margin-left: 35px;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .hero__buy {
@@ -2989,12 +2970,6 @@ button,
   border: 7px solid transparent;
   -o-border-image: url("../img/subscription-border.png") 1 stretch;
      border-image: url("../img/subscription-border.png") 1 stretch;
-}
-.tabs__card:hover button, .tabs__card:focus button {
-  background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
-  border: none;
-  color: #ffffff;
-  padding: 26px 24px;
 }
 
 .tabs__card h3 {
@@ -4637,6 +4612,7 @@ button,
           align-items: center;
   padding-top: 17px;
   margin-bottom: 10px;
+  margin-right: -3px;
 }
 @media (max-width: 1199px) {
   .accordion__button-wrapper {

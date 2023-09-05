@@ -6,13 +6,15 @@ export const swiperCoach = () => {
     grabCursor: 'true',
     breakpoints: {
       1366: {
+        slidesPerView: 4,
+        initialSlide: 0,
         spaceBetween: 40,
       },
 
       1200: {
         slidesPerView: 4,
         initialSlide: 0,
-        spaceBetween: 10,
+        spaceBetween: 5,
       },
 
       768: {

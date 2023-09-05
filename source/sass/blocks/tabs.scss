@@ -187,13 +187,6 @@
   &:focus {
     border: 7px solid transparent;
     border-image: url("../img/subscription-border.png") 1 stretch;
-
-    button {
-      background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
-      border: none;
-      color: $color-default-white;
-      padding: 26px 24px;
-    }
   }
 }
 
