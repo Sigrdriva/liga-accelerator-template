@@ -11,18 +11,18 @@
   min-width: 204px;
   min-height: 55px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 20px 30px;
     min-width: 178px;
     min-height: 55px;
   }
 
-  &--special {
-    background: linear-gradient(97deg, #ed0233 0%, hsl(220, 100%, 36%) 100%);
-    padding: 25px 24px;
-    width: 204px;
-    margin-left: -1px;
-  }
+  // &--special {
+  //   background: linear-gradient(97deg, #ed0233 0%, hsl(220, 100%, 36%) 100%);
+  //   padding: 25px 24px;
+  //   width: 204px;
+  //   margin-left: -1px;
+  // }
 
   &:hover,
   &:focus:not(.focus-visible) {
@@ -40,7 +40,7 @@
     opacity: 0.5;
   }
 
-  &--not-special {
+  &--subscription {
     color: $color-text;
     border: solid 2px $color-text;
     padding: 24px;
@@ -55,8 +55,7 @@
     }
   }
 
-  &--special,
-  &--not-special {
+  &--subscription {
     &:hover,
     &:focus,
     &:active {

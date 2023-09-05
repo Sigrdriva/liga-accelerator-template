@@ -2,8 +2,9 @@
   margin: 0 auto;
   padding: 120px;
   position: relative;
+  max-width: 840px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 91px 101px 99px;
   }
 
@@ -12,10 +13,14 @@
   }
 }
 
+.reviews__wrapper {
+  position: relative;
+}
+
 .reviews__slider {
   width: 560px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 566px;
   }
 
@@ -32,7 +37,7 @@
   padding-left: 2px;
   text-align: center;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
@@ -55,7 +60,7 @@
   gap: 0 28px;
   grid-template-columns: 80px auto;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 62px 65px 56px;
   }
 
@@ -109,12 +114,12 @@
 .reviews__btn {
   width: 56px;
   height: 56px;
-  top: 338px;
+  top: 116px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/svg/slider-button.svg");
 
-  @include vp-1365 {
+  @include vp-1199 {
     top: 296px;
   }
 
@@ -126,9 +131,9 @@
   }
 
   &--prev {
-    left: 326px;
+    left: -56px;
 
-    @include vp-1365 {
+    @include vp-1199 {
       left: 25px;
     }
 
@@ -138,10 +143,10 @@
   }
 
   &--next {
-    right: 326px;
+    right: -56px;
     transform: rotate(180deg);
 
-    @include vp-1365 {
+    @include vp-1199 {
       right: 25px;
     }
 

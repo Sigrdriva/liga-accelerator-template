@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 42px 45px 35px;
   }
 
@@ -23,7 +23,7 @@
   gap: 20px;
   padding-left: 48px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     gap: 11px;
     padding-left: 52px;
     padding-bottom: 7px;
@@ -106,7 +106,7 @@
 .footer__logo {
   padding-top: 11px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 81px;
     padding-bottom: 10px;
     padding-left: 1px;
@@ -119,7 +119,7 @@
 }
 
 .footer__social {
-  @include vp-1365 {
+  @include vp-1199 {
     padding-left: 37px;
     padding-top: 3px;
   }

@@ -13,6 +13,10 @@
   }
 
   @include vp-1365 {
+    min-width: $vp-1200;
+  }
+
+  @include vp-1199 {
     min-width: $vp-768;
     padding: 100px 163px 60px;
     min-height: 1779px;
@@ -44,7 +48,7 @@
   text-align: center;
   margin: 0 0 12px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     @include font-style("Alumni Sans", 600, 42px, normal, $color-text);
     letter-spacing: 1.26px;
     margin-bottom: 15px;

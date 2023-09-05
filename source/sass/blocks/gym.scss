@@ -9,6 +9,10 @@
   position: relative;
 
   @include vp-1365 {
+    grid-template-columns: auto 660px;
+  }
+
+  @include vp-1199 {
     grid-template-columns: auto;
     padding: 100px 45px 183px;
     gap: 35px;
@@ -21,7 +25,7 @@
 }
 
 .gym__wrapper {
-  @include vp-1365 {
+  @include vp-1199 {
     text-align: center;
     padding: 0 86px;
   }
@@ -37,7 +41,7 @@
   letter-spacing: 1.44px;
   margin-bottom: 9px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-top: 0;
@@ -56,7 +60,7 @@
   margin-top: 0;
   margin-bottom: 42px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 37px;
   }
 
@@ -80,7 +84,7 @@
 }
 
 .gym p:last-of-type {
-  @include vp-1365 {
+  @include vp-1199 {
     display: none;
   }
 }
@@ -88,13 +92,13 @@
 .gym img {
   margin: 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 678px;
   }
 }
 
 .gym__picture {
-  @include vp-1365 {
+  @include vp-1199 {
     margin: 0 auto;
   }
 }
@@ -107,7 +111,7 @@
   left: calc(50% + 39px);
   transform: translate(-50%, 0);
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 266px;
     height: 167px;
     left: 50%;
@@ -145,7 +149,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 73px;
     height: 73px;
   }

@@ -87,21 +87,21 @@
                     <p>12 занятий</p>
                     <p class="tabs__price-bg">5000</p>
                     <p class="tabs__price">5000<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
-                  <div class="tabs__card tabs__card--best">
+                  <div class="tabs__card">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
                     <p class="tabs__price-bg">1700</p>
                     <p class="tabs__price">1700<span>₽</span></p>
-                    <button class="button button--special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                   <div class="tabs__card">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
                     <p class="tabs__price-bg">2700</p>
                     <p class="tabs__price">2700<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                 </div>
                 <div class="tabs__element tabs__element--lined" data-tabs="element">
@@ -110,21 +110,21 @@
                     <p>12 занятий</p>
                     <p class="tabs__price-bg">25000</p>
                     <p class="tabs__price">25000<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
-                  <div class="tabs__card tabs__card--best">
+                  <div class="tabs__card">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
                     <p class="tabs__price-bg">10000</p>
                     <p class="tabs__price">10000<span>₽</span></p>
-                    <button class="button button--special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                   <div class="tabs__card">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
                     <p class="tabs__price-bg">15000</p>
                     <p class="tabs__price">15000<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                 </div>
                 <div class="tabs__element tabs__element--lined" data-tabs="element">
@@ -133,21 +133,21 @@
                     <p>12 занятий</p>
                     <p class="tabs__price-bg">45000</p>
                     <p class="tabs__price">45000<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
-                  <div class="tabs__card tabs__card--best">
+                  <div class="tabs__card">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
                     <p class="tabs__price-bg">18000</p>
                     <p class="tabs__price">18000<span>₽</span></p>
-                    <button class="button button--special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                   <div class="tabs__card">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00 </p>
                     <p class="tabs__price-bg">27000</p>
                     <p class="tabs__price">27000<span>₽</span></p>
-                    <button class="button button--not-special">купить абонемент</button>
+                    <button class="button button--subscription">купить абонемент</button>
                   </div>
                 </div>
               </div>
@@ -180,6 +180,7 @@
         </section>
 
         <section class="coaches">
+
           <h2>Тренеры</h2>
           <div class="swiper-button-prev coaches__btn coaches__btn--prev"></div>
           <div class="swiper coaches__slider">
@@ -214,7 +215,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="swiper-slide coaches__slide coaches__slide--hover" tabindex="0">
+              <div class="swiper-slide coaches__slide" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(max-width: 768px)" srcset="./img/coaches/Alexander-tablet.webp 1x, ./img/coaches/Alexander-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/coaches/Alexander.webp 1x, ./img/coaches/Alexander@2x.webp 2x">
@@ -592,37 +593,39 @@
 
         <section class="reviews">
           <h2>Отзывы</h2>
-          <div class="swiper reviews__slider">
-            <div class="swiper-wrapper reviews__slider-wrapper">
-              <div class="swiper-slide reviews__slide">
-                <picture>
-                  <source type="image/webp" srcset="./img/review.webp 1x, ./img/review@2x.webp 2x">
-                  <img class="reviews__image" src="./img/review.jpg" width="80" height="80" srcset="./img/review@2x.jpg 2x" alt="Аватарка Анны Орловой.">
-                </picture>
-                <div class="reviews__name">
-                  <h3>Анна Орлова</h3>
+          <div class="reviews__wrapper">
+            <div class="swiper reviews__slider">
+              <div class="swiper-wrapper reviews__slider-wrapper">
+                <div class="swiper-slide reviews__slide">
+                  <picture>
+                    <source type="image/webp" srcset="./img/review.webp 1x, ./img/review@2x.webp 2x">
+                    <img class="reviews__image" src="./img/review.jpg" width="80" height="80" srcset="./img/review@2x.jpg 2x" alt="Аватарка Анны Орловой.">
+                  </picture>
+                  <div class="reviews__name">
+                    <h3>Анна Орлова</h3>
+                  </div>
+                  <div class="reviews__info">
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
+                  </div>
                 </div>
-                <div class="reviews__info">
-                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
-                </div>
-              </div>
-              <div class="swiper-slide reviews__slide">
-                <picture>
-                  <source type="image/webp" srcset="./img/review.webp 1x, ./img/review@2x.webp 2x">
-                  <img class="reviews__image" src="./img/review.jpg" width="80" height="80" srcset="./img/review@2x.jpg 2x" alt="Аватарка Елены Орловой.">
-                </picture>
-                <div class="reviews__name">
-                  <h3>Елена Орлова</h3>
-                </div>
-                <div class="reviews__info">
-                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
+                <div class="swiper-slide reviews__slide">
+                  <picture>
+                    <source type="image/webp" srcset="./img/review.webp 1x, ./img/review@2x.webp 2x">
+                    <img class="reviews__image" src="./img/review.jpg" width="80" height="80" srcset="./img/review@2x.jpg 2x" alt="Аватарка Елены Орловой.">
+                  </picture>
+                  <div class="reviews__name">
+                    <h3>Елена Орлова</h3>
+                  </div>
+                  <div class="reviews__info">
+                    <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-button-next reviews__btn reviews__btn--next">
-          </div>
-          <div class="swiper-button-prev reviews__btn reviews__btn--prev">
+            <div class="swiper-button-next reviews__btn reviews__btn--next">
+            </div>
+            <div class="swiper-button-prev reviews__btn reviews__btn--prev">
+            </div>
           </div>
         </section>
 

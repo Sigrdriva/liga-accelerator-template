@@ -46,7 +46,7 @@
     opacity: 0.3;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 342px;
     margin-bottom: 52px;
 
@@ -96,7 +96,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     @include font-style("Roboto Condensed", 400, 18px, 27px, $color-text);
 
     &.is-active::after {
@@ -129,12 +129,13 @@
   display: flex;
   gap: 39px;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
     padding: 15px;
   }
 
-  @include vp-1365 {
+  @include vp-1199 {
     flex-direction: column;
     padding: 0;
     gap: 40px;
@@ -150,23 +151,26 @@
   padding: 58px 70px;
   background: $color-default-white;
   text-align: center;
+  max-width: 362px;
+  position: relative;
+  z-index: 1;
 
   @include vp-767 {
     padding: 45px 34px 48px;
   }
 
-  &--best {
-    padding: 56px 72px 60px;
-    border: 7px solid transparent;
-    border-image: url("../img/subscription-border.png") 1 stretch;
+  // &--best {
+  //   padding: 56px 72px 60px;
+  //   border: 7px solid transparent;
+  //   border-image: url("../img/subscription-border.png") 1 stretch;
 
-    @include vp-767 {
-      padding: 44px 35px 48px;
-    }
-  }
+  //   @include vp-767 {
+  //     padding: 44px 35px 48px;
+  //   }
+  // }
 
   &:last-child {
-    @include vp-1365 {
+    @include vp-1199 {
       margin-top: -1px;
       padding-bottom: 60px;
     }
@@ -184,7 +188,7 @@
     border: 7px solid transparent;
     border-image: url("../img/subscription-border.png") 1 stretch;
 
-    button:not(.button--special) {
+    button {
       background: linear-gradient(97deg, #ed0233 0%, #003eb7 100%);
       border: none;
       color: $color-default-white;
@@ -214,6 +218,10 @@
 .tabs__price-bg {
   @include font-style("Roboto Condensed", 700, 100px, 0, #e8e8e8);
   margin: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
 
   @include vp-767 {
     @include font-style("Roboto Condensed", 700, 80px, 0, #e8e8e8);
@@ -232,13 +240,13 @@
   }
 }
 
-.tabs__card--best .tabs__price {
-  margin-bottom: 37px;
+// .tabs__card--best .tabs__price {
+//   margin-bottom: 37px;
 
-  @include vp-767 {
-    margin-bottom: 31px;
-  }
-}
+//   @include vp-767 {
+//     margin-bottom: 31px;
+//   }
+// }
 
 .tabs__price span {
   color: $color-text;

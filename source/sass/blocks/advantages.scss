@@ -3,7 +3,7 @@
   padding: 65px 163px 113px;
   text-align: center;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 91px 45px 87px;
   }
 
@@ -18,7 +18,7 @@
   letter-spacing: 1.62px;
   margin-bottom: 55px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 50px;
@@ -39,7 +39,7 @@
   padding: 0;
   justify-content: center;
 
-  @include vp-1365 {
+  @include vp-1199 {
     grid-template-columns: 325px 325px;
     gap: 0 28px;
   }
@@ -58,7 +58,7 @@
   gap: 0 30px;
   text-align: start;
 
-  @include vp-1365 {
+  @include vp-1199 {
     gap: 0 29px;
   }
 
@@ -72,7 +72,7 @@
 .advantages__item:nth-child(even) {
   padding-left: 19px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding-left: 0;
   }
 
@@ -99,7 +99,7 @@
   background-clip: text;
   background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 100%);
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 58px;
     line-height: 42px;
   }
@@ -113,7 +113,7 @@
   @include font-style("Roboto Condensed", 700, 22px, 20px, $color-text);
   margin: 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 20px;
     line-height: 16px;
   }
@@ -127,7 +127,7 @@
 .advantages__item p {
   margin-top: -46px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-top: 9px;
   }
 
@@ -145,7 +145,7 @@
   padding: 65px 34px 41px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1199 {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     margin: 26px 118px 35px;
@@ -169,7 +169,7 @@
     background-color: rgba(209, 10, 66, 0.2);
     top: 50%;
 
-    @include vp-1365 {
+    @include vp-1199 {
       display: none;
     }
   }
@@ -187,7 +187,7 @@
   @include font-style("Roboto Condensed", 700, 26px, 42px, $color-default-white);
   margin: 7px 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     @include font-style("Roboto Condensed", 700, 22px, 33px, $color-default-white);
     margin: 25px 0 0;
   }
@@ -206,7 +206,7 @@
 .advantages__item--central p {
   margin-top: 32px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-top: 14px;
   }
 
@@ -219,7 +219,7 @@
 .advantages__item--experience {
   align-items: end;
 
-  @include vp-1365 {
+  @include vp-1199 {
     align-items: center;
   }
 
@@ -232,7 +232,7 @@
 .advantages__item--experience p {
   margin-bottom: -7px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: -21px;
   }
 }
@@ -247,7 +247,7 @@
 .advantages__item--experience h3 {
   margin-bottom: -27px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: -23px;
   }
 
@@ -261,7 +261,7 @@
 .advantages__item--experience .advantages__number {
   line-height: 10px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     line-height: 2px;
   }
 

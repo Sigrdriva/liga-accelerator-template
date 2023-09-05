@@ -16,7 +16,7 @@
     padding-bottom: 14px;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
-    @include vp-1365 {
+    @include vp-1199 {
       padding-bottom: 16px;
     }
 
@@ -37,7 +37,7 @@
     padding-top: 8px;
     border-top: 1px solid rgba(28, 51, 116, 0.2);
 
-    @include vp-1365 {
+    @include vp-1199 {
       margin-bottom: 18px;
       padding-top: 8px;
     }
@@ -62,7 +62,7 @@
 
   &__button {
     padding: 10px;
-    width: 42px;
+    width: 45px;
     height: 42px;
     text-transform: uppercase;
 
@@ -95,7 +95,7 @@
       margin: 0;
       padding-right: 178px;
 
-      @include vp-1365 {
+      @include vp-1199 {
         padding-right: 120px;
       }
 
@@ -114,7 +114,7 @@
   padding-top: 17px;
   margin-bottom: 10px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin-bottom: 7px;
   }
 

@@ -6,9 +6,13 @@ export const swiperCoach = () => {
     grabCursor: 'true',
     breakpoints: {
       1366: {
+        spaceBetween: 40,
+      },
+
+      1200: {
         slidesPerView: 4,
         initialSlide: 0,
-        spaceBetween: 40,
+        spaceBetween: 10,
       },
 
       768: {
@@ -39,7 +43,7 @@ export const swiperReview = () => {
     loop: false,
     grabCursor: 'true',
     // breakpoints: {
-    //   1366: {
+    //   1199: {
     //     slidesPerView: 4,
     //     initialSlide: 0,
     //     spaceBetween: 40,

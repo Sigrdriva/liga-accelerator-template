@@ -8,6 +8,10 @@
   justify-content: space-between;
 
   @include vp-1365 {
+    width: $vp-1200;
+  }
+
+  @include vp-1199 {
     width: $vp-768;
     padding: 34px 45px;
     margin-bottom: -115px;
@@ -24,7 +28,7 @@
   padding-left: 1px;
   padding-top: 10px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     width: 82px;
     padding-left: 0;
     padding-top: 7px;
@@ -41,7 +45,7 @@
   @include font-style("Alumni Sans", 600, 26px, normal, $color-default-white);
   letter-spacing: 0.78px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     @include font-style("Alumni Sans", 600, 24px, normal, $color-default-white);
     letter-spacing: 0.48px;
   }

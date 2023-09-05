@@ -12,8 +12,8 @@ const changeActive = () => {
   let activeControl = document.querySelectorAll('.FAQ__control');
   let activeTab = document.querySelectorAll('.FAQ__content .tabs__element');
 
-  const breakpointDesktop = window.matchMedia('(min-width:1366px)');
-  const breakpointTablet = window.matchMedia('(min-width:768px) and (max-width:1365px)');
+  const breakpointDesktop = window.matchMedia('(min-width:1200px)');
+  const breakpointTablet = window.matchMedia('(min-width:768px) and (max-width:1199px)');
   const breakpointChecker = () => {
     for (let i = 0; i < activeControl.length; i++) {
       activeControl[i].classList.remove('is-active');

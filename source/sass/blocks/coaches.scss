@@ -4,7 +4,7 @@
   position: relative;
   max-width: $vp-1366;
 
-  @include vp-1365 {
+  @include vp-1199 {
     padding: 0 101px 100px;
     max-width: $vp-768;
   }
@@ -22,7 +22,7 @@
   margin-bottom: 48px;
   padding-left: 2px;
 
-  @include vp-1365 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
@@ -42,7 +42,7 @@
 }
 
 .coaches__image {
-  @include vp-1365 {
+  @include vp-1199 {
     display: block;
     width: 268px;
     height: 294px;
@@ -70,7 +70,7 @@
   @include font-style("Roboto Condensed", 700, 18px, 27px, $color-default-white);
   margin: -49px 0 0;
 
-  @include vp-1365 {
+  @include vp-1199 {
     margin: -49px 0 0 9px;
   }
 }
@@ -109,13 +109,21 @@
 }
 
 .coaches__slide:hover > .coaches__info,
-.coaches__slide--hover > .coaches__info,
+//.coaches__slide--hover > .coaches__info,
 .coaches__slide:focus > .coaches__info {
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(16, 38, 84, 0.89);
   padding: 52px 30px;
+
+  @include vp-1365 {
+    padding: 30px 15px;
+  }
+
+  @include vp-1199 {
+    padding: 52px 30px;
+  }
 
   @include vp-767 {
     padding: 42px 30px;
@@ -136,7 +144,7 @@
 .coaches__slide:hover > .coaches__info p,
 .coaches__slide--hover > .coaches__info p,
 .coaches__slide:focus > .coaches__info p {
-  @include vp-1365 {
+  @include vp-1199 {
     margin-left: -9px;
   }
 
@@ -153,7 +161,7 @@
   background-position: center;
   background-image: url("../img/svg/slider-button.svg");
 
-  @include vp-1365 {
+  @include vp-1199 {
     top: 223px;
   }
 
@@ -167,7 +175,7 @@
   &--prev {
     left: 27px;
 
-    @include vp-1365 {
+    @include vp-1199 {
       left: 25px;
     }
 
@@ -180,7 +188,7 @@
     right: 27px;
     transform: rotate(180deg);
 
-    @include vp-1365 {
+    @include vp-1199 {
       right: 25px;
     }
 
